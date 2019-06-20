@@ -1,826 +1,828 @@
 
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>Software Engineer Challenge (Backend).md</title><style></style></head><body id="preview">
-<h4><a id="What_are_the_Specialized_Areas_of_Security_0"></a>What are the Specialized Areas of Security?</h4>
-<ul>
-<li>Physical Security (Biometrics, Fence, CCTV)</li>
-<li>Personal Security (Evacuation Plan, Floor Warden)</li>
-<li>Operations Security(BCP plan)</li>
-<li>Communications Security (Encryption)</li>
-<li>Network Security (Firewall, IDS, IPS)</li>
-</ul>
-<h4><a id="What_are_the_Communities_of_Interest_7"></a>What are the Communities of Interest?</h4>
-<ul>
-<li>InfoSec Community: protect information assets from threats. (Information security Managers, CISO).</li>
-<li>IT Community: support business objectives by supplying appropriate information technology.(CTO, IT head).</li>
-<li>Business Community: policy development and provision of resources.(Top Management, Department Heads).</li>
-</ul>
-<h4><a id="What_is_CIA_Triangle_12"></a>What is CIA Triangle?</h4>
-<ul>
-<li>Confidentiality</li>
-<li>Integrity</li>
-<li>Availability</li>
-</ul>
-<h4><a id="What_are_the_core_goals_of_information_security_and_security_controls_17"></a>What are the core goals of information security and security controls?</h4>
-<p>Confidentiality, Integrity, Availability are the core goals of information security. Security controls are typically evaluated on how well they address these three core information security goals. (poor firewall).</p>
-<h4><a id="What_are_the_states_of_data_20"></a>What are the states of data?</h4>
-<p>In transmission, In Process, In Storage. CIA is needed in all these states.</p>
-<h4><a id="What_Confidentiality_in_the_CIA_23"></a>What Confidentiality in the CIA?</h4>
-<ul>
-<li>Confidentiality Protecting data from unauthorized access, use, disclosure<br>
-Attacks: capturing network traffic and stealing password files or human error like leaving terminal open.<br>
-Security Controls: encryption, access controls(only those with sufficient privileges may access certain information.</li>
-<li>Privacy (Related to Confidentiality)<br>
-Layman terms: Disclosure causing embarrassment. Information is to be used only for purposes known to the data owner not disclosed to the public (e.g. Public domain information used by public/non-confidential)</li>
-</ul>
-<h4><a id="What_is_Integrity_in_the_CIA_30"></a>What is Integrity in the CIA?</h4>
-<p>Integrity is to prevent data from unauthorize modification intentionally or non-intentionally. Integrity is the quality or state of being whole, complete, and uncorrupted.<br>
-Attacks: viruses, unauthorized access, human Error like modifying or deleting files; entering invalid data.<br>
-Control include: strict access control, input/function checks.</p>
-<h4><a id="What_is_Availability_in_the_CIA_35"></a>What is Availability in the CIA?</h4>
-<p>Availability is making information accessible to authorized user timely and without interference or obstruction.<br>
-Threats: include device failure, and environmental issues (heat, static, flooding, power loss, and so on); including DoS attacks.<br>
-Countermeasures: monitoring performance and network traffic(SNMP), using firewalls and routers to prevent DoS attacks, Redundancy.</p>
-<h4><a id="What_is_AAA_of_CIA_40"></a>What is AAA of CIA?</h4>
-<p>Authentication and Identification Authorization Accountability Auditing(Related Concept to Accountability).</p>
-<h4><a id="What_is_Authentication_and_Identification_in_the_AAA_of_CIA_43"></a>What is Authentication and Identification in the AAA of CIA?</h4>
-<p>Authentication and Identification</p>
-<ul>
-<li>Identity is claim about who the user is.</li>
-<li>Providing an identity username; swiping a smart card; or positioning your face, hand, or finger for a camera or scanning</li>
-<li>Authentication is verifying whether claim identity is valid or not. Sometime requires additional information(password,pins) or identification is handled by other means, such as physical location</li>
-<li>a single two-step process. Providing an identity is the first step, and providing the authentication factors is the second step</li>
-</ul>
-<h4><a id="What_is_Authorization_in_AAA_of_CIA_50"></a>What is Authorization in AAA of CIA?</h4>
-<p>Authorization</p>
-<ul>
-<li>Actions that authorized personnel are allowed to perform and object that user can access once the user has been identified and authenticated.</li>
-<li>the system evaluates an access control matrix that compares the subject, the object, and the intended activity</li>
-<li>Privilege Escalation Attack. (Dual segregation of duties)</li>
-</ul>
-<h4><a id="What_is_Accountability_in_AAA_of_CIA_56"></a>What is Accountability in AAA of CIA?</h4>
-<p>Accountability</p>
-<ul>
-<li>Hold user accountable for their action.</li>
-<li>Depends upon strong authentication that provides assurance that every activity undertaken can be attributed to a named person or automated process. E.g: Password Sharing. Legally vulnerable.</li>
-<li>Passwords Vs. Multifactor Authentication Auditing(Related Concept to Accountability).</li>
-<li>Auditing Vs Monitoring.</li>
-<li>actions are tracked and recorded for the purpose of holding the subject accountable for their actions written to log which provides audit trail(history of the event).</li>
-<li>Auditing is needed to detect malicious actions and system failures and to reconstruct events, provide evidence for the prosecution, and produce problem reports and analysis.</li>
-</ul>
-<h4><a id="What_is_NSTISSC_Security_Model_65"></a>What is NSTISSC Security Model?</h4>
-<p>National Security Telecommunications &amp; Information systems security committee.</p>
-<h4><a id="What_is_the_six_Ps_68"></a>What is the six Ps?</h4>
-<p>The extended characteristics/component of information security are known as the six Ps:<br>
-- Planning<br>
-- Policy<br>
-- Programs<br>
-- Protection<br>
-- People<br>
-- Project Management</p>
-<h4><a id="What_is_Policy_77"></a>What is Policy?</h4>
-<p>The set of organizational guidelines that dictate certain action within the organization. In InfoSec, there are three general categories of policy:<br>
-- General program policy (Enterprise Information Security Policy(EISP)){overall security, Roles and responsibility}<br>
-- An Issue-Specific Security Policy (ISSP){technology=email, internet}<br>
-- System-Specific Policies (SSP) {standards or procedures/ checklist}</p>
-<h4><a id="What_is_Program_83"></a>What is Program?</h4>
-<p>Policy is broken down into the program for implementation. Programs inside Enterprise Information Security Policy(EISP) may be Employee Security Awareness Program, implementation of the firewall.</p>
-<h4><a id="What_is_Protection_86"></a>What is Protection?</h4>
-<ul>
-<li>Risk management activities, including risk assessment and control, as well as protection mechanisms, technologies, and tools.</li>
-<li>Finding Weakness and Strengthening.</li>
-</ul>
-<h4><a id="What_is_People_in_six_Ps_90"></a>What is People in six Ps?</h4>
-<ul>
-<li>Managers need to perform a leadership role</li>
-<li>Mintzberg role of managers:
-<ul>
-<li>Informational Role( Provide and Receive communication)</li>
-<li>Interpersonal Role (Leadership, networking)</li>
-<li>Decision role (problem-solving, change management, allocate resources, negotiation)</li>
-</ul>
-</li>
-</ul>
-<h4><a id="What_is_Project_Management_in_six_Ps_97"></a>What is Project Management in six Ps?</h4>
-<p>Project is the task of temporary nature, start and finish, goal. POLC</p>
-<h4><a id="What_is_Risk_Management_100"></a>What is Risk Management?</h4>
-<ol>
-<li>Risk identification( Identify the threat and calculate its risk)</li>
-<li>Risk Control (Deciding on what safeguards to be placed)</li>
-</ol>
-<h4><a id="What_is_the_Risk_Management_Process_104"></a>What is the Risk Management Process?</h4>
-<p>1st Stage: Risk Management Strategy<br>
-2nd Stage: Risk Management program<br>
-3rd Stage: Risk Management Team<br>
-4th Stage: Risk Identification</p>
-<h4><a id="What_is_the_Risk_Management_Strategy_in_the_Risk_Management_Process_110"></a>What is the Risk Management Strategy in the Risk Management Process?</h4>
-<p>1st Stage: Risk Management Strategy</p>
-<ul>
-<li>Incorporate all risk management process, activities, methodologies, and policies to support the objective of the organization i.e security needs.</li>
-<li>The basis for the risk management program</li>
-<li>Determined by Internal and External Factors</li>
-<li>Developed by Board of director or Management</li>
-<li>Constantly updated because of internal and external factors</li>
-</ul>
-<h4><a id="What_is_the_Risk_Management_program_in_the_Risk_Management_Process_118"></a>What is the Risk Management program in the Risk Management Process?</h4>
-<p>2nd Stage: Risk Management program</p>
-<ul>
-<li>Carried out to achieve risk management strategy.</li>
-<li>Risk Management Program will include;
-<ol>
-<li>Context and Purpose of the program</li>
-<li>Risk Management Team 3.Asset Identification, classification and 4.Methodology to be used</li>
-</ol>
-</li>
-</ul>
-<h4><a id="What_is_the_Risk_Management_Team_in_the_Risk_Management_Process_125"></a>What is the Risk Management Team in the Risk Management Process?</h4>
-<p>3rd Stage: Risk Management Team</p>
-<ul>
-<li>Define the authority and responsibility of different communities of interest</li>
-<li>Providing adequate resources to carry out the program</li>
-<li>Responsibilities of these communities are:
-<ol>
-<li>Evaluating Risk</li>
-<li>Determining control options</li>
-<li>Acquiring and installing controls</li>
-<li>Ensuring controls remain effective</li>
-</ol>
-</li>
-</ul>
-<h4><a id="What_is_Risk_Identification_in_the_Risk_Management_Process_135"></a>What is Risk Identification in the Risk Management Process?</h4>
-<p>4th Stage: Risk Identification<br>
-Asset Identification Types of assets:</p>
-<ol>
-<li>People (different employees, contractors, vendors)</li>
-<li>Procedures (Standard and Sensitive)</li>
-<li>Data (transmission, processing, and storage)</li>
-<li>Software (applications, operating system, security components)</li>
-<li>Hardware</li>
-<li>Network (Network devices, more attacked)</li>
-</ol>
-<h4><a id="What_is_Asset_Classification_145"></a>What is Asset Classification?</h4>
-<p>Classify the asset as per priority (Critical or non-critical) How to assign value to the asset</p>
-<ol>
-<li>Which information asset is the most critical to the success of the organization?</li>
-<li>Which information asset generates the most revenue?</li>
-<li>Which information asset generates the highest profitability?</li>
-<li>Which information asset is the most expensive to replace?</li>
-<li>Which information asset is the most expensive to protect?</li>
-<li>Which information asset’s loss or compromise would be the most embarrassing or cause the greatest liability? (Cambridge Analytics Scandals)</li>
-</ol>
-<h4><a id="What_is_Threat_identification_and_assessment_154"></a>What is Threat identification and assessment?</h4>
-<p>process of identifying the threat that has the potential to endanger the organization. Criteria for threat assessment(impact)</p>
-<ol>
-<li>Which threat represents the most danger to the organization. The danger depends upon
-<ul>
-<li>Probability of threat attacking organization</li>
-<li>The frequency with which attack can occur</li>
-<li>Amount of damage that it could create</li>
-</ul>
-</li>
-<li>How much cost to recover from damages?</li>
-<li>Which of threats require the greatest expenditure to prevent?</li>
-</ol>
-<h4><a id="What_is_Vulnerability_163"></a>What is Vulnerability?</h4>
-<p>Vulnerability is a flaw, loophole, error in the IT infrastructure so when a vulnerability is exploited, it will cause loss/ damage to the asset.</p>
-<h4><a id="What_is_the_main_purpose_of_CBA_Cost_Benefit_AnalysisEconomic_Feasibility_Study_166"></a>What is the main purpose of CBA (Cost Benefit Analysis/Economic Feasibility Study)?</h4>
-<p>CBA main purpose is to select suitable safeguard based on the cost and benefit. the cost of control or safeguard include:</p>
-<ul>
-<li>Cost of development or acquisition of hardware, software, and services</li>
-<li>Training Fees</li>
-<li>Cost of implementation</li>
-<li>Service costs (e.g. Hiring experts)</li>
-<li>Cost of maintenance (AMC or Annual Subscription) Benefit<br>
-Value to the organization because of loss prevented by using specific controls. Loss is equal to asset value is at risk. Benefit calculation begins with Asset Valuation and Impact</li>
-</ul>
-<h4><a id="What_is_Asset_Valuation_175"></a>What is Asset Valuation?</h4>
-<p>process of assigning financial value or worth to each information asset. This can include actual cost or non-monetary cost so valuation can be difficult and asset valuation differs from one organization to other will based on following factors like:</p>
-<ul>
-<li>cost to create or acquire, design, installation incl. maintenance</li>
-<li>cost to replace i.e. right now</li>
-<li>estimation or real costs protection against loss and litigation(fines and penalties) ✓ Value to owners users(critical success, profitability) ✓ worth to the competition (competitive advantage)</li>
-</ul>
-<h4><a id="How_to_do_Impact_Assessment_181"></a>How to do Impact Assessment?</h4>
-<p>After assets valuation, the next step is to identify potential loss in asset occur from the Risk In order to estimate of potential loss per risk. The questions that must be asked here include:</p>
-<ol>
-<li>What financial impact would occur due to damage?</li>
-<li>What would it cost to recover from the attack, in addition to the financial impact of damage? (The goal here is to calculate Single Loss Expectancy for each risk. )</li>
-</ol>
-<h4><a id="How_to_calculate_Single_Loss_Expectancy_S_L_E_186"></a>How to calculate Single Loss Expectancy (S L E)?</h4>
-<p>It is the estimation of loss occurred in a single asset because of a single risk.<br>
-S L E = Asset Value (A V) x Exposure Factor (E F)<br>
-Exposure Facture = % of potential loss to the organization caused by a specific threat. The exposure factor for a small asset will be less while for great value asset it will be more.</p>
-<h4><a id="How_to_calculate_Annual_Loss_ExpectancyA_L_E_191"></a>How to calculate Annual Loss Expectancy(A L E)?</h4>
-<p>A L E is the estimated yearly cost of loss of risk.<br>
-A L E = S L E (Single Loss Expectancy) X A R O (Annual Rate of Occurrence)<br>
-ARO is the expected frequency with which a specific threat or risk will occur (that is, become realized) within a single year. Higher the frequency of risk of the threat, Higher will be ARO.</p>
-<h4><a id="How_to_calculate_the_Cost_Benefit_Analysis_C_B_A_196"></a>How to calculate the Cost Benefit Analysis (C B A)?</h4>
-<p>Estimates, whether is a cost associated with control, is justifiable or not. It is calculated before control or safeguard is implemented, to determine if the control is worth implementing, and calculated after controls have been implemented and functioning for a time.<br>
-C B A = A L E (prior) - A L E (post) - ACS<br>
-ALE (prior to control) is the ALE of the risk before the implementation of the control. A L E (post control) is the A L E examined after the control has been in place for a period of time. A C S is the Annual Cost of the Safeguard</p>
-<h4><a id="What_are_the_alternatives_to_CBA_AnalysisQualitative_Analysis_201"></a>What are the alternatives to CBA Analysis(Qualitative Analysis)?</h4>
-<ul>
-<li>Benchmarking</li>
-<li>Due care and due diligence</li>
-<li>Best business practices</li>
-<li>Gold standard</li>
-<li>Government recommendations</li>
-<li>Baseline</li>
-</ul>
-<h4><a id="How_is_Benchmarking_an_alternative_to_CBA_Analysis_209"></a>How is Benchmarking an alternative to CBA Analysis?</h4>
-<p>comparing an organization’s performance against peers and competitors in an effort to learn the best ways of conducting business or performance gap.</p>
-<ul>
-<li>How to perform benchmarking:
-<ul>
-<li>Metric Based Measures (comparison is done based on the number to measure performance like no of successful attacks, no security persons)</li>
-<li>Process Based Measures ( process to attain goals)</li>
-</ul>
-</li>
-<li>Two categories of benchmarks are used:
-<ul>
-<li>Standards of due care and due diligence</li>
-<li>Best practices Problems with Benchmarking;
-<ul>
-<li>Lack of cooperation between organizations.</li>
-<li>No two organizations are identical.</li>
-<li>Limitation of resources</li>
-<li>Simply knowing what was going on a few years ago doesn’t necessarily indicate what to do next.(changes in external and internal environment)</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h4><a id="How_Due_care_and_Due_diligence_is_an_alternative_to_Alternatives_to_CBA_AnalysisQualitative_Analysis_222"></a>How Due care and Due diligence is an alternative to Alternatives to CBA Analysis(Qualitative Analysis)?</h4>
-<ol>
-<li>Standard of Due Care
-<ul>
-<li>When an organization must meet certain minimum levels of security in order to comply with legal requirements. ( For eg: protection of personal data)</li>
-<li>CBA is not applicable for the safeguard imposed by legislation</li>
-</ul>
-</li>
-<li>Due Diligence
-<ul>
-<li>When organization have achieved a standard of due care(applied controls at or above prescribed levels)</li>
-<li>monitoring that the implemented standards continue to provide the required level of protection. Legal liability if failure to maintain both</li>
-</ul>
-</li>
-</ol>
-<h4><a id="How_Best_Practices_is_an_alternative_to_CBA_230"></a>How Best Practices is an alternative to CBA?</h4>
-<ul>
-<li>Best Security efforts in the overall industry.</li>
-<li>Benchmarking of best practices via metric based and process based.</li>
-<li>Should be economic feasible</li>
-</ul>
-<h4><a id="How_Gold_Standard_is_an_alternative_to_CBA_235"></a>How Gold Standard is an alternative to CBA?</h4>
-<ul>
-<li>Recognition that an organization has achieved “best of best” performance in a certain area.</li>
-<li>Gold Standard is usually prescribed by the internal standard-setting body. For eg., ISO 27002 as the ‘Gold Standard’ in information security. (114 controls to be fulfilled to become ISO compliant)</li>
-</ul>
-<h4><a id="How_Government_Recommendations_is_an_alternative_to_CBA_239"></a>How Government Recommendations is an alternative to CBA?</h4>
-<ul>
-<li>Some industries regulated by the government. (Licensing)</li>
-<li>Specify requirements for the industries.</li>
-</ul>
-<h4><a id="How_Baselining_is_an_alternative_to_CBA_243"></a>How Baselining is an alternative to CBA?</h4>
-<ul>
-<li>Process of benchmarking</li>
-<li>Establish standard based on benchmarking/best practices against which actual performance is measured. E.g: No of attacks</li>
-</ul>
-<h4><a id="What_are_the_Risk_Control_Strategies_247"></a>What are the Risk Control Strategies?</h4>
-<ul>
-<li>Avoidance</li>
-<li>Transference</li>
-<li>Mitigation</li>
-<li>Acceptance</li>
-</ul>
-<h4><a id="What_is_Avoidance_in_Risk_Control_Strategies_253"></a>What is Avoidance in Risk Control Strategies?</h4>
-<ul>
-<li>Avoid doing the activity that has extreme risk.</li>
-<li>Process of selecting alternate options or activities that have less associated risk (http Vs https)</li>
-</ul>
-<h4><a id="What_is_Transference_in_Risk_Control_Strategies_257"></a>What is Transference in Risk Control Strategies?</h4>
-<p>Transfer risk of loss to another party or organization. For example Insurance.</p>
-<h4><a id="What_is_Mitigation_in_Risk_Control_Strategies_260"></a>What is Mitigation in Risk Control Strategies?</h4>
-<p>Reduces the impact of loss through planning and preparation. Deals with early detection and response accomplished by means of countering threats, removing vulnerabilities from assets, limiting access to assets, and adding protective safeguards. There are three common methods used to mitigate:</p>
-<ul>
-<li>Application of policy</li>
-<li>Education and training</li>
-<li>Application of technology</li>
-</ul>
-<h4><a id="What_is_Acceptance_in_Risk_Control_Strategies_266"></a>What is Acceptance in Risk Control Strategies?</h4>
-<p>accepting the risk without control or mitigation when countermeasure costs would outweigh the possible cost of loss due to a risk and risk is low.</p>
-<h4><a id="What_is_Risk_Appetite_269"></a>What is Risk Appetite?</h4>
-<ul>
-<li>quantity and nature of risk that organizations are willing to accept for which no controls will be applied.</li>
-<li>Capacity is based on various factors like the type of business, the criticality of information assets, attitude towards risk.</li>
-<li>balances the cost of control and risk of loss.(Higher chance of loss-Low risk appetite and higher controls).</li>
-</ul>
-<h4><a id="What_is_Residual_Risk_274"></a>What is Residual Risk?</h4>
-<p>Risk remains after applying Counter Measures(E.g Accounting System). The goal of information security is not to bring residual risk to zero, but to bring it in line with an organization’s risk appetite. Residual risk&gt;Risk appetite(more controls to be applied) Residual risk&lt; Risk appetite(excessive control may have applied)</p>
-<h4><a id="What_are_the_basic_rules_must_be_followed_when_shaping_a_policy_277"></a>What are the basic rules must be followed when shaping a policy?</h4>
-<ul>
-<li>Never conflict with the law.</li>
-<li>Stand up in court.</li>
-<li>Properly supported and administered by top mgmt.</li>
-<li>Contribute to the success of the organization.</li>
-<li>Involve end users of information systems. (practical)</li>
-</ul>
-<h4><a id="How_to_create_a_good_security_policy_Bulls_Eye_Model_284"></a>How to create a good security policy (Bull’s Eye Model)?</h4>
-<p>Layers of Bull’s Eye</p>
-<ul>
-<li>Policies: the first layer of defense</li>
-<li>Networks: threats first meet the organization’s network.</li>
-<li>Systems: computers and manufacturing systems</li>
-<li>Applications: all applications systems</li>
-</ul>
-<h4><a id="What_are_Policy_Standards_Guidelines_and_Procedures_291"></a>What are Policy, Standards, Guidelines, and Procedures?</h4>
-<p>Policy is a plan or course of action that influences and determine decisions. Mandatory.<br>
-Standards is detailed statement of how to use hardware, technology, software, security controls. Mandatory.<br>
-Guidelines are recommended action and guides on applying specific standard or when there are no standards. Flexible(customizable).<br>
-Procedures are is the step-by-step guide for accomplishing a task like that describes the exact actions necessary to implement a specific security mechanism, solutions(hardware deployment). Mandatory.</p>
-<h4><a id="What_are_the_different_types_of_Information_Security_Policy_297"></a>What are the different types of Information Security Policy?</h4>
-<ul>
-<li>Enterprise Information Security Policy (EISP)</li>
-<li>Issue-Specific Security Policies (ISSP)</li>
-<li>Systems-specific Security Policies (SysSP)</li>
-</ul>
-<h4><a id="What_is_Enterprise_Information_Security_Policy_EISP_302"></a>What is Enterprise Information Security Policy (EISP)?</h4>
-<p>Sets strategic direction, scope, and tone for the organization’s security efforts. Executive Level document by CISO.<br>
-Guides development, implementation, and management requirements of the information security program</p>
-<h4><a id="What_is_Enterprise_Information_Security_Policy_EISP_306"></a>What is Enterprise Information Security Policy (EISP)?</h4>
-<p>EISP Components:</p>
-<ol>
-<li>An overview of the corporate philosophy on security</li>
-<li>Information on the structure of the information security organization and individuals who fulfill the information security role</li>
-<li>Fully articulated responsibilities for security that are shared by all members of the organization (employees(i.e., badges), contractors, consultants, partners, and visitors(i.e log book))</li>
-<li>Fully articulated responsibilities for security that are unique to each role within the organization. (HR vs Marketing)</li>
-</ol>
-<h4><a id="What_is_IssueSpecific_Security_Policy_ISSP_313"></a>What is Issue-Specific Security Policy (ISSP)?</h4>
-<p>focuses on the proper use technologies and department/units function like Email, Use of internet, individual department function. Different approach for Issue-Specific Security Policy (ISSP) Components of An ISSP.</p>
-<ol>
-<li>Statement of policy
-<ul>
-<li>Scope and applicability</li>
-<li>Definition of technology addressed</li>
-<li>Responsibilities</li>
-</ul>
-</li>
-<li>Authorized access and usage of equipment who can use the technology governed by the policy and for what purposes. Fair and responsible use.</li>
-<li>Prohibited usage of equipment
-<ul>
-<li>Disruptive use or misuse</li>
-<li>Criminal use</li>
-<li>Offensive or harassing materials</li>
-<li>Copyrighted, licensed, or other intellectual property</li>
-</ul>
-</li>
-<li>Systems management specify users’ and systems administrators’ responsibilities so that all parties know what they are accountable for. (e.gData Owners)</li>
-<li>Violations of policy
-<ul>
-<li>Procedures for reporting violations</li>
-<li>Penalties for violations</li>
-</ul>
-</li>
-<li>Policy review and modification
-<ul>
-<li>Scheduled review of policy procedures for modification</li>
-</ul>
-</li>
-<li>Limitations of liability a.Statements of liability
-<ul>
-<li>Other disclaimers as needed</li>
-</ul>
-</li>
-</ol>
-<h4><a id="What_is_SystemsSpecific_Policy_SysSP_334"></a>What is Systems-Specific Policy (SysSP)?</h4>
-<p>They often function as standards or procedures to be used when configuring or maintaining systems, hardware, software. Systems-Specific Policy (SysSP) can be separated into:</p>
-<ol>
-<li>Management guidance:
-<ul>
-<li>Created by management to guide the implementation and configuration of technology.</li>
-<li>Informs technologists of management’s intent</li>
-</ul>
-</li>
-<li>Technical specifications
-<ul>
-<li>System administrator’s directions on implementing managerial policy</li>
-<li>Each type of equipment has its own Technical Specifications SysSPs</li>
-<li>There are two general methods of implementing such technical controls:
-<ul>
-<li>Access Control Lists</li>
-<li>Configuration Rules</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<h4><a id="What_is_Access_Control_Lists_ACL_346"></a>What is Access Control Lists (ACL)?</h4>
-<p>control access to file storage systems, object , or other network communications devices include the user access lists, matrices, and capability tables that govern the rights and privilege of users In general, ACLs regulate:</p>
-<ul>
-<li>Who can use the system?</li>
-<li>What authorized users can access?</li>
-<li>When authorized users can access the system?</li>
-<li>Where authorized users can access the system from?</li>
-<li>How authorized users can access the system?</li>
-<li>Restricting what users can access, e.g., printers, files, communications, and applications? E.g.: Firewall(Filter,block, reduce)</li>
-</ul>
-<h4><a id="What_is_Configuration_Rules_355"></a>What is Configuration Rules?</h4>
-<p>Configuration rules are instructional codes that dictate which actions to perform on each set of information they process. Specific configuration scripts telling the systems what actions to perform on each set of information they process. Rule-based policies more specific than ACL while operating system.</p>
-<h4><a id="What_is_Contingency_Planning_358"></a>What is Contingency Planning?</h4>
-<ul>
-<li>Different from Risk Management Framework(Risk Management is Proactive vs Contingency Planning is Reactive)</li>
-<li>The goal is to restore normal business within a reasonable period of time at minimum cost.</li>
-<li>The main aim is to make the organization resilient.</li>
-<li>The Hartford insurance company estimates that, on average, over</li>
-</ul>
-<ol start="4">
-<li>percent of businesses that don’t have a disaster plan go out of business after a major loss like a fire, a break-in, or a storm</li>
-</ol>
-<h4><a id="What_are_the_components_of_Contingency_Planning_365"></a>What are the components of Contingency Planning?</h4>
-<p>Business Impact analysis: Identifies the information systems that are critical for business operations and assess consequences in case of disruption of that system. High Impact System(with high requirement of information security objective) will have huge impact to business Low Impact System(with low requirement of information security objective) will have low impact to the business Its result will help in the development of the following plans:</p>
-<ul>
-<li>Incident Response Plan (IRP)</li>
-<li>Disaster Recovery Plan (DRP)</li>
-<li>Business Continuity Plan (BCP)</li>
-</ul>
-<h4><a id="What_is_Incident_Response_PlanIRP_371"></a>What is Incident Response Plan(IRP)?</h4>
-<h4><a id="What_is_an_incident_373"></a>What is an incident?</h4>
-<ul>
-<li>Directed against information assets.</li>
-<li>Have a realistic chance of success</li>
-<li>Threatens the CIA of information resources IRP deals with how to identify, mitigate and recover from those computer incidents</li>
-</ul>
-<h4><a id="What_is_Disaster_Recovery_PlanDRP_378"></a>What is Disaster Recovery Plan(DRP)?</h4>
-<h4><a id="What_is_a_disaster_380"></a>What is a disaster?</h4>
-<ul>
-<li>Unable to mitigate the impact of an incident</li>
-<li>The impact is severe that organization cannot recover quickly It deals with restoring information system operation at a primary site during the emergency</li>
-</ul>
-<h4><a id="What_is_the_Business_Continuity_PlanBCP_384"></a>What is the Business Continuity Plan(BCP)?</h4>
-<ul>
-<li>Occurs when those operations cannot be quickly restored at the primary site and disruption will have long term impact.</li>
-<li>Enables to continue business at alternative sites like hot, warm, cold.</li>
-</ul>
-<h4><a id="What_are_the_steps_of_Contingency_Planning_388"></a>What are the steps of Contingency Planning?</h4>
-<ol>
-<li>Develop the CP policy statement. A formal policy provides the authority and guidance necessary to develop an effective contingency plan. Contingency Planning Management Team headed by Information Security Contingency Plan Coordinator. Include members from the business community, IT manager, Info security, legal, CIO. Related with other policies(HR, Account, etc)</li>
-<li>Conduct the BIA. The BIA helps identify and prioritize information systems and components critical to supporting the organization’s mission/business processes and what will be the major consequences in case of disruption</li>
-<li>Identify Resource Requirement: evaluation of the resources required to resume mission/business processes as quickly as possible. identify internal and external POCs</li>
-<li>Identify Preventive Controls: identification of effective contingency planning preventive controls and maintaining these controls on an ongoing basis(Like fire suppression system, fire extinguisher, backup)</li>
-<li>Creating and implementing Contingency Strategy: deals with selecting and implementing the right set of security controls. For e.g.; incident, disaster and business continuity).</li>
-<li>Plan Testing, Training, and Exercises
-<ul>
-<li>Testing: determines the operability of the plan by identifying any deficiencies. Should be as close to the operating environment. (like network down, calling POC)</li>
-<li>Training: deals with informing personnel of their roles and responsibilities within a particular information system contingency plan and teaching them skills related to those roles and responsibilities for preparing them for participation in exercise, test, and emergency. Done Annually.</li>
-<li>Exercises: simulation of an emergency designed to validate the successful operation of components of contingency planning. (drill test)</li>
-</ul>
-</li>
-</ol>
-<h4><a id="What_is_Business_Process_and_Recovery_Criticality_399"></a>What is Business Process and Recovery Criticality?</h4>
-<p>It is the process of determining the recovering high-impact system that is based on the following criteria:</p>
-<ol>
-<li>Maximum Tolerable Downtime (MTD): The total amount of outage or disruption time that the system owner is willing to accept considering all impact.</li>
-<li>Recovery Time Objective(RTO): The maximum time period within which the business process has to be restored to avoid unacceptable impact. (MTD vs RTO)</li>
-<li>Recovery Point Objective(RPO): It is measured in time that shows an acceptable amount of loss of data that business/process can tolerate.</li>
-<li>Work Recovery Time(WRT): It deals with restoring data, testing process and then making everything live for production purpose.</li>
-</ol>
-<h4><a id="What_are_the_stages_of_Business_Impact_Analysis_406"></a>What are the stages of Business Impact Analysis?</h4>
-<ol>
-<li>Threat attack identification and prioritization: Create Attack profile of various attack which includes, symptoms of an attack, what information systems it will impact.</li>
-<li>Business Unit Analysis: Identify critical business and its supporting information system</li>
-<li>Attack Success Scenario: Create a series of scenario, determining the outcome of a successful attack from each threat on critical information system</li>
-<li>Potential Damage Assessment: Outcome of scenario is ranked:(low, medium, high) Attack scenario end case</li>
-<li>Subordinate Plan Classification: Decide which plan to execute like IR plan(low), DR plan(medium) and BCP plan(high)</li>
-</ol>
-<h4><a id="What_are_the_stages_of_Incident_Response_Planning_413"></a>What are the stages of Incident Response Planning?</h4>
-<ol>
-<li>IR planning: For each attack scenario developed in BIA, we develop a series of predefined action scenario in a checklist.</li>
-<li>Incident Detection: Incident indicators provided by human or automation system</li>
-<li>Incident Reaction: Stop the incident, mitigate the impact, inform key personnel(alert rooster, alert message), documentation(learning, legal standpoint, run the simulation)</li>
-<li>Incident Recovery: Damage assessment and recovery method. Includes the following activities:
-<ul>
-<li>Identifying Vulnerabilities</li>
-<li>Addressing Safeguards</li>
-<li>Restoring data from backups</li>
-<li>Monitoring the system.</li>
-<li>Inform communities of interest</li>
-</ul>
-</li>
-</ol>
-<h4><a id="What_are_the_stages_of_Disaster_Recovery_Plan_424"></a>What are the stages of Disaster Recovery Plan</h4>
-<ol>
-<li>Disaster Recovery Plan: Includes type of disaster and specific recovery procedures during and after each type of disaster. Roles and responsibilities</li>
-<li>Crisis Management: Creating Crisis Management team and creating a command center. Two Functions:
-<ul>
-<li>Accounting for everyone/supporting personnel.</li>
-<li>Activating alert rooster.</li>
-<li>Keeping public/management inform</li>
-</ul>
-</li>
-<li>Recovery Scenarios: Restore the system to full operation. If the primary site destroyed BCP is initiated.</li>
-</ol>
-<h4><a id="What_are_the_stages_of_the_Business_Continuity_Plan_432"></a>What are the stages of the Business Continuity Plan?</h4>
-<p>BCP used in multinational companies that small companies</p>
-<ol>
-<li>Plan for continuity of operation Deals with finding temporary facilities equipped with the necessary resources to run critical function to continue the business.</li>
-<li>Continuity Strategies Different Options based on cost:
-<ul>
-<li>Hot Sites: Duplicates computing resources, peripherals, phone system application. Most Expensive.</li>
-<li>Warm Sites: Contains equipment like a store. Restore backup. Takes time to be fully operational.</li>
-<li>Cold Sites: the only empty room with standard heating, air-conditioning. Least expensive.</li>
-</ul>
-</li>
-<li>Continuity management Provision of above sites via mutual agreement, paying for a vendor.</li>
-</ol>
-<h4><a id="What_is_Law_Enforcement_Involvement_in_Contingency_Planning_441"></a>What is Law Enforcement Involvement in Contingency Planning?</h4>
-<p>Attacks deal with the violation of law decide what type of law enforcement after taking legal counsel necessary. Advantages:</p>
-<ol>
-<li>Better able to process evidence</li>
-<li>Issues warrant/subpoenas to obtaining witness, suspect statement Disadvantages:
-<ul>
-<li>Loss of control</li>
-<li>Lack of information</li>
-<li>Loss of equipment</li>
-</ul>
-</li>
-</ol>
-<h4><a id="What_is_the_Sphere_of_Security_449"></a>What is the Sphere of Security?</h4>
-<p>Technical Control enables policy enforcement where human behavior is difficult to regulate.</p>
-<h4><a id="What_is_Access_Control_452"></a>What is Access Control?</h4>
-<p>Regulates the physical(external) and logical access(built-in the system) of users into trusted areas of the organization like physical devices, system resources. Collection of policies, programs, and technical control. Three models (approach) of Access Control:</p>
-<ol>
-<li>Mandatory Access Control
-<ul>
-<li>to protected highly classified data.</li>
-<li>used by government oriented agencies that maintain top-secret information</li>
-<li>greatly reduces the amount of rights, permissions, and functionality a user has for security purposes. (user can’t install any programs, change file permission)</li>
-</ul>
-</li>
-<li>Discretionary Access Control
-<ul>
-<li>enables the owner of the resource to specify which subjects can access specific resources.</li>
-</ul>
-</li>
-<li>Non-Discretionary (Role Based) Access Control
-<ul>
-<li>The access rights are given to the individuals on the basis of function they have to perform. For eg, IT admin role, managerial role.</li>
-<li>Best in the organization with high employee turnover</li>
-<li>based upon the necessary operations and tasks a user needs to carry out to fulfill his/her responsibilities in an organization. (least privilege principle)</li>
-</ul>
-</li>
-</ol>
-<h4><a id="What_are_the_elements_of_Access_Control_465"></a>What are the elements of Access Control?</h4>
-<ol>
-<li>Identity</li>
-<li>Authentication</li>
-<li>Authorization</li>
-<li>Accountability</li>
-<li>Identity: is a claim that is given by User ID in the information system. It must be unique</li>
-</ol>
-<h4><a id="What_is_Authentication_472"></a>What is Authentication?</h4>
-<p>process of validating a user identity There are four types of authentication mechanisms:</p>
-<ul>
-<li>Something You Know: a password, passphrase, or some other unique authentication code like PIN.</li>
-<li>Something You Have: on basis of something that the user possesses. (a card,key, or token)</li>
-<li>Something You Are: identity based on a unique physical attribute that is evaluated by biometrics like fingerprint, facial recognition</li>
-<li>Something You Produce: action performed by users, like signature recognition and voice recognition. A strong authentication uses at least two different authentication mechanism types.(two-factor or multifactor authentication)</li>
-</ul>
-<h4><a id="How_to_evaluate_Biometrics_479"></a>How to evaluate Biometrics?</h4>
-<p>Biometric technologies are generally evaluated according to three basic criteria:</p>
-<ul>
-<li>The false reject rate (FRR) /False Negative/ Type I Error: the percentage of authorized users who are denied access</li>
-<li>not a threat to security</li>
-<li>The false accept rate (FAR)/False Positive/ Type II Error: the percentage of unauthorized users who are allowed access</li>
-<li>a serious breach of security</li>
-<li>The crossover error rate (CER): the point at which the number of false rejections equals the false acceptances</li>
-<li>an optimal outcome</li>
-</ul>
-<h4><a id="What_is_Authorization_488"></a>What is Authorization?</h4>
-<p>Establish whether the user is authorized to access the particular resource and what actions he is permitted to perform on that resource. In general, authorization can be managed by:</p>
-<ul>
-<li>Authorization for each authenticated user (complex and resource-intensive).</li>
-<li>Authorization for members of a group (most commonly used method).</li>
-<li>Authorization across multiple systems (‘single sign-on’)a central authentication and authorization system verifies entity identity and grants authorization.</li>
-</ul>
-<h4><a id="What_is_Accountability_494"></a>What is Accountability?</h4>
-<p>Ensure users are accountable for their actions, Reviewing logs to reconstruct events i.e., track bad deeds back to individuals, detect intrusions.</p>
-<h4><a id="What_is_a_Firewall_497"></a>What is a Firewall?</h4>
-<p>In information security, a firewall is any device that prevents a specific type of information from moving between two networks, often the outside, known as the untrusted network (e.g., the Internet), and the inside, known as the trusted network.<br>
-The firewall may be a separate computer system, a service running on an existing router or server, or a separate network containing a number of supporting devices(DMZ).</p>
-<h4><a id="What_are_the_different_Firewall_Architectures_501"></a>What are the different Firewall Architectures?</h4>
-<ol>
-<li>Packet filtering Router First generation firewall. Packet filtering is a firewall technology that makes access decisions based upon header information of the packet. Header values include source and destination IP address, port numbers, protocol types, on the basis of which inbound and outbound traffic is controlled by the firewall. The main disadvantage is that they only inspect the header of the packet but not content, as well as header, can be spoofed.</li>
-<li>Screened-host firewalls Screened-host firewall systems combine the packet filtering router with a separate, application proxy server known as a bastion host.
-<ul>
-<li>The router is used to screen packets to minimize the network traffic and load on the internal proxy.</li>
-<li>The application proxy examines an application layer protocol, such as HTTP, Mail and performs the proxy services.</li>
-<li>This separate and single host, which is often referred to as a bastion host, represents a rich target for external attacks and should be very thoroughly secured.</li>
-</ul>
-</li>
-<li>Dual-homed host firewalls A dual-homed host architecture is built around the dual-homed host computer with two network interface: one that is connected to the external network, and one that is connected to the internal network. Use a dual-homed host as a firewall, you disable this routing function. A user wishing to access the trusted network from the Internet would log into the dual-homed host first, and then access the trusted network from there.</li>
-<li>Screened-subnet firewalls
-<ul>
-<li>The screened-subnet firewall consists of one or more internal bastion hosts located behind a packet filtering router, with each host protecting the trusted network. This raises the level of difficulty to penetrate the defense.</li>
-<li>One of the general models (in Figure 9-8) shows connections are routed as follows:
-<ul>
-<li>Connections from the outside or untrusted network are routed through an external filtering router</li>
-<li>Connections from the outside or untrusted network are routed into—and then out of—a routing firewall to the separate network segment known as the DMZ</li>
-<li>Connections into the trusted internal network are allowed only from the DMZ bastion host servers</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<h4><a id="What_are_Intrusion_Detection_Systems_IDSs_515"></a>What are Intrusion Detection Systems (IDSs)?</h4>
-<p>Tool for detecting unauthorized use of, or attack upon, a computer, network, or telecommunications infrastructure to mitigate damage by sending an alert on a network manager’s screen, or e-mail or even reconfiguring a firewall’s ACL setting. IDS have 3 components:</p>
-<ul>
-<li>Sensors: collect network traffic and user activity data.</li>
-<li>Analyzer: determines suspicious activity based on rules.</li>
-<li>administrator’s interface: the terminal where sends an alert Like firewall systems, IDSs require complex configurations to provide the level of detection and response desired.</li>
-</ul>
-<h4><a id="What_is_a_HostBased_IDS_521"></a>What is a Host-Based IDS?</h4>
-<p>installed on individual workstations and/or servers to watch for inappropriate or abnormal activity usually used to provide alerts if users have delete system files, reconfigure important settings, or put the system at risk in any other way(e.g system folder). Reactive HIDS products are installed only on critical servers, not on every system on the network, because of the resource overhead and the administration hassle that such an installation would cause.</p>
-<h4><a id="What_is_a_NetworkBased_IDS_524"></a>What is a Network-Based IDS?</h4>
-<p>monitor network traffic when unusual activity occurs and then notify the appropriate administrator. (Packet sniffer) network IDPSs require a much more complex configuration and maintenance program than do host-based IDPSs. (E.g Network intefaces) proactive nature(because generating an alert in real time).</p>
-<h4><a id="What_is_Knowledge_or_Signaturebased_Intrusion_Detection_527"></a>What is Knowledge or Signature-based Intrusion Detection?</h4>
-<p>IDS vendor accumulate knowledge about different attacks and how they are carried out and develop a model known as Signatures. Each identified attack has a signature, which is used to detect an attack in progress or determine if one has occurred within the network. (land attack) Their effectiveness depends IDS is weak against new types of attacks as signatures are based on previously identified attack.</p>
-<h4><a id="What_is_Statistical_AnomalyBased_IDS_530"></a>What is Statistical Anomaly-Based IDS?</h4>
-<p>Knows as Behavioral-based IDS where it first collects data from network traffic and establishes a baseline. It then periodically samples network activity, based on statistical methods, and compares the samples to the baseline.<br>
-When the activity falls outside the baseline parameters (known as the clipping level), the IDS notifies the administrator. advantage of this approach is that the system is able to detect new types of attacks whose signature or fix has not been developed yet because it looks for the abnormal activity of any type. Disadvantage it is difficult to define what is normal when the network is constantly changing, it will create a lot of false positives. (attacker integrate his activities).</p>
-<h4><a id="What_is_Remote_Authentication_DialIn_User_Service_RADIUS__Terminal_Access_Controller_Access_Control_System_TACACS_534"></a>What is Remote Authentication Dial-In User Service (RADIUS) &amp; Terminal Access Controller Access Control System (TACACS)?</h4>
-<p>RADIUS and TACACS are systems that authenticate the credentials of users who are trying to access an organization’s network via a dial-up connection. RADIUS has a central RADIUS server that centralizes the management of user authentication.<br>
-A Remote Authentication Dial-In User Service (RADIUS) system centralizes the management of user authentication by placing the responsibility for authenticating each user in the central RADIUS server.<br>
-When a Remote Access Server (RAS) receives requests for a network connection from a dial-up client, it passes the request along with the user’s credentials to the RADIUS server; RADIUS then validates the credentials.</p>
-<h4><a id="What_is_Law_and_Ethics_in_Information_Security_539"></a>What is Law and Ethics in Information Security?</h4>
-<ul>
-<li>Laws: rules enforced by government to maintain certain behavior in society. (mandatory).</li>
-<li>Ethics: define socially acceptable behavior based on cultural mores.</li>
-<li>Cultural mores: relatively fixed moral attitudes or beliefs of a particular group.</li>
-<li>Difference: laws carry sanctions (enforcement)of a governing authority but ethics does not. Law is enforced and ethics come from within Belief vs Idea. (lack of cybersecurity awareness).</li>
-</ul>
-<h4><a id="What_are_the_types_of_Law_545"></a>What are the types of Law?</h4>
-<ul>
-<li>Civil law: represents a wide variety of laws that govern a nation/state.</li>
-<li>Criminal law: addresses violations harmful to the society that is punishable by the law.</li>
-<li>Tort law: a subset of civil law that allows individuals to seek recourse against others in the event of personal, physical, or financial injury.</li>
-<li>Private law regulates the relationships among individuals and organizations, and encompasses family law, commercial law, and labor law.</li>
-<li>Public law law affects the general public. All the citizens have to follow. For e.g., criminal, administrative, and constitutional law.</li>
-</ul>
-<h4><a id="What_is_Policy_as_Law_552"></a>What is Policy as Law?</h4>
-<p>Policies serve as organizational laws. Unlike law, however, ignorance is an acceptable defense. Therefore to be enforceable as law, policies must be:</p>
-<ul>
-<li>Distributed to all individuals who are expected to comply with them.</li>
-<li>Readily available for employee reference.</li>
-<li>Easily understood, with multilingual translations and translations for visually impaired or low-literacy employees.</li>
-<li>Acknowledged by the employee, usually by means of a signed consent form.</li>
-<li>Uniformly enforced for all employees.</li>
-</ul>
-<h4><a id="What_is_Ethics_and_Information_Security_560"></a>What is Ethics and Information Security?</h4>
-<p>Cultural differences create difficulty in determining what is and is not ethical.</p>
-<ul>
-<li>Difficulties arise when one nationality’s ethical behavior conflicts with ethics of another national group.</li>
-<li>Overriding factor in leveling the ethical perceptions within a small population is education.</li>
-<li>Employees must be trained in expected behaviors of an ethical employee, especially in areas of information security.</li>
-</ul>
-<h4><a id="What_is_Deterrence_to_Unethical_and_Illegal_Behavior_566"></a>What is Deterrence to Unethical and Illegal Behavior?</h4>
-<p>Three causes of unethical and illegal behavior(Ignorance, accident, intent) Deterrence is the best method for preventing an illegal or unethical activity.<br>
-Examples of deterrents include laws, policies, and technical controls. However, organization laws/policies and their associated penalties only deter if three conditions are present:</p>
-<ul>
-<li>Fear of penalty</li>
-<li>Probability of being caught</li>
-<li>Probability of penalty being administered</li>
-</ul>
-<h4><a id="What_is_Organizational_Liability_573"></a>What is Organizational Liability?</h4>
-<p>If an employee, acting with or without the authorization, performs an illegal or unethical act, causing some degree of harm, the organization can be held financially liable for that action.<br>
-An organization increases its liability (legal obligation) if it refuses to take measures known as “due care” that is to make sure that every employee knows what is acceptable and what is not, and the consequences of illegal or unethical actions(policy, training)<br>
-“Due diligence” requires that an organization make a valid and the ongoing effort to maintain due care.&quot;</p>
-<h4><a id="What_is_Audit_Risk_and_Materiality_578"></a>What is Audit Risk and Materiality?</h4>
-<ul>
-<li>Materiality: Significance amount/ severe impact on CIA. Risk-Based Audit focus on material threats. Types of Audit Risk Inherent Risk: Risk that occurs because of the nature of business. (Banks, Heath Sector).</li>
-<li>Control Risk: the Material threat that cannot be prevented or detected on a timely basis by controls. (manual log review vs SIEM).</li>
-<li>Detection Risk: Material error/lapses in IT security not detected by auditor. Inherent Risk and Control Risk Vs Detection Risk.</li>
-</ul>
-<h4><a id="What_are_Evidence_and_Conclusion_583"></a>What are Evidence and Conclusion?</h4>
-<p>Two types of audit conclusion/opinion. (Qualified Vs Unqualified). Audit conclusion/opinion should be supported by Evidence Evidence is collected from:</p>
-<ol>
-<li>IS audit observations.</li>
-<li>Interview or correspondence with different parties.</li>
-<li>Audit Test procedures( Pen testing) Evidence should be:
-<ul>
-<li>Valid and relevant.</li>
-<li>Complete.</li>
-</ul>
-</li>
-</ol>
-<h4><a id="What_is_Internal_Controls_591"></a>What is Internal Controls?</h4>
-<p>Risk Management tool applied within the organization Composed of policies, procedures, practices, technical controls, and organizational structures. Automatic and Manual Two key purposes:</p>
-<ol>
-<li>To achieve business objectives</li>
-<li>To avoid bad thing happening(minimize the risk of error/omission/fraud) Types of Internal Controls;
-<ul>
-<li>Preventive: Detect problems before they arise (Example: Encryption, access control).</li>
-<li>Detective: Detect and report errors (Example: Reviewing logs).</li>
-<li>Corrective: Identify error, Minimize impact (Example: Contingency planning, backup Res.).</li>
-</ul>
-</li>
-</ol>
-<h4><a id="What_is_IT_Audit_Process_599"></a>What is IT Audit Process?</h4>
-<ol>
-<li>Planning:
-<ul>
-<li>determine the objectives and scope of the audit.</li>
-<li>Risk Assessment:
-<ul>
-<li>Evaluate risk and internal controls.</li>
-<li>Compliance and Substantive testing.</li>
-<li>Developing checklists.</li>
-</ul>
-</li>
-<li>Scheduling( avoiding personnel absences and times of high activity).</li>
-<li>Kick off meeting(Interviews with the clients, point of contact, reporting mechanism).</li>
-</ul>
-</li>
-<li>Fieldwork and Documentation:
-<ul>
-<li>Apply checklist i.e. carry out audit procedures.</li>
-<li>Determine risk and lapses in internal controls=Findings.</li>
-<li>Documentation(Working papers):
-<ul>
-<li>arrive valid conclusion?</li>
-<li>defense if the conclusion is challenged.</li>
-<li>learn from the experience.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Issue Discovery and Validation:
-<ul>
-<li>Report findings like potential risky issues, lacking mitigate controls.</li>
-<li>Timely reporting(correction timely and avoid confusion).</li>
-</ul>
-</li>
-<li>Solution Development Three ways to provide a solution:
-<ul>
-<li>Recommendation Approach (Auditor Recommends but may not be effective).</li>
-<li>Management-Response Approach (Auditor report issue with or without recommendation asking for management response)<br>
-ution Approach(Client and auditor mutually agree on an action plan).</li>
-</ul>
-</li>
-<li>Report Draft and issuance:
-<ul>
-<li>Audit Report two purposes( Auditor’s Record, Business Report Card)</li>
-<li>Elements of Audit Report
-<ul>
-<li>Statement of Audit Scope(what areas were covered in audit).</li>
-<li>Executive Summary( Brief summary of audit report highlighting major issues and action plan).</li>
-<li>List of issues and action plans(layman terms).</li>
-<li>conclusion(satisfactory, unsatisfactory or needs improvement).</li>
-</ul>
-</li>
-<li>distribute reports (for response).</li>
-</ul>
-</li>
-<li>Issue Tracking:
-<ul>
-<li>Audit Closure?</li>
-<li>track and follow up on issues until they are resolved.</li>
-<li>Escalation (Final resort).</li>
-<li>Validation .e.g. BCP plan.</li>
-</ul>
-</li>
-</ol>
-<h4><a id="What_is_Audit_Trail_636"></a>What is Audit Trail?</h4>
-<p>A chronological record of any event or activities (log) Three types of logs:<br>
-1.System Logs: record events executed on an operating system, including miscellaneous events and those generated during system startup like hardware and controller failures.</p>
-<ol start="2">
-<li>Application Logs: record the events regarding access to the application . For e.g., events include reading, editing, deleting, or printing files.</li>
-<li>Security logs track security-related events like logon and logoff times and changes to access rights.</li>
-</ol>
-<h4><a id="What_is_Project_Management_642"></a>What is Project Management?</h4>
-<p>Project management is techniques to plan, organize, and monitor the project activities. Hence Project management is a process that is composed of:</p>
-<ol>
-<li>Planning: Begins with a goal, sets standard (time, resources), suitable project leader and team.</li>
-<li>Monitoring and Controlling: Proactive Measure of the performance of the project against the standard.</li>
-<li>Closing: Project is terminated.</li>
-</ol>
-<h4><a id="What_is_Project_Plan_Development_648"></a>What is Project Plan Development?</h4>
-<p>Three core elements are used in the creation of a project plan: work time, resources, project deliverables Project.</p>
-<ul>
-<li>Deliverables: are outcomes that are demonstrable. it’s a product, a process, a policy, or some other outcome. This specifies the roadmap of the project.</li>
-<li>Resources: includes people, equipment, supplies, materials, software, hardware depending on the project that needs to be quantified. (constraint or budget).</li>
-<li>Work Time: fixing start and deadline of the project which realistic based on its’ scope.</li>
-</ul>
-<h4><a id="What_are_the_Project_Planning_Considerations_654"></a>What are the Project Planning Considerations?</h4>
-<p>Special considerations include:</p>
-<ul>
-<li>Finance (Budget, CBA).</li>
-<li>Priority (Priority of work package is determined by No of dependencies and Resource(experts) availability).</li>
-<li>Time And Schedule (Estimating a project schedule(PERT, GANTT chart)).</li>
-<li>Staff (Need to hire/employ enough qualified, trained, and other personnel).</li>
-<li>Procurement (purchasing goods or services from vendors, contractors, suppliers. Limited by Budget Constraints).</li>
-<li>Organizational Feasibility (Plan for change management like new policies, processes, technology and these can create tension and resistance).</li>
-<li>Training.</li>
-</ul>
-<h4><a id="What_is_the_Work_Breakdown_StructureWBS_664"></a>What is the Work Breakdown Structure(WBS)?</h4>
-<p>It breaks down the project scope into manageable deliverables known as work packages.</p>
-
-</body></html>
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>CSM</title><style></style></head><body id="preview">
+    <article>
+    <h1><a id="What_are_the_Specialized_Areas_of_Security_0"></a>What are the Specialized Areas of Security?</h1>
+    <ul>
+    <li>Physical Security (Biometrics, Fence, CCTV)</li>
+    <li>Personal Security (Evacuation Plan, Floor Warden)</li>
+    <li>Operations Security(BCP plan)</li>
+    <li>Communications Security (Encryption)</li>
+    <li>Network Security (Firewall, IDS, IPS)</li>
+    </ul>
+    <h1><a id="What_are_the_Communities_of_Interest_7"></a>What are the Communities of Interest?</h1>
+    <ul>
+    <li>InfoSec Community: protect information assets from threats. (Information security Managers, CISO).</li>
+    <li>IT Community: support business objectives by supplying appropriate information technology.(CTO, IT head).</li>
+    <li>Business Community: policy development and provision of resources.(Top Management, Department Heads).</li>
+    </ul>
+    <h1><a id="What_is_CIA_Triangle_12"></a>What is CIA Triangle?</h1>
+    <ul>
+    <li>Confidentiality</li>
+    <li>Integrity</li>
+    <li>Availability</li>
+    </ul>
+    <h1><a id="What_are_the_core_goals_of_information_security_and_security_controls_17"></a>What are the core goals of information security and security controls?</h1>
+    <p>Confidentiality, Integrity, Availability are the core goals of information security. Security controls are typically evaluated on how well they address these three core information security goals. (poor firewall).</p>
+    <h1><a id="What_are_the_states_of_data_20"></a>What are the states of data?</h1>
+    <p>In transmission, In Process, In Storage. CIA is needed in all these states.</p>
+    <h1><a id="What_Confidentiality_in_the_CIA_23"></a>What Confidentiality in the CIA?</h1>
+    <ul>
+    <li>Confidentiality Protecting data from unauthorized access, use, disclosure<br>
+    Attacks: capturing network traffic and stealing password files or human error like leaving terminal open.<br>
+    Security Controls: encryption, access controls(only those with sufficient privileges may access certain information.</li>
+    <li>Privacy (Related to Confidentiality)<br>
+    Layman terms: Disclosure causing embarrassment. Information is to be used only for purposes known to the data owner not disclosed to the public (e.g. Public domain information used by public/non-confidential)</li>
+    </ul>
+    <h1><a id="What_is_Integrity_in_the_CIA_30"></a>What is Integrity in the CIA?</h1>
+    <p>Integrity is to prevent data from unauthorize modification intentionally or non-intentionally. Integrity is the quality or state of being whole, complete, and uncorrupted.<br>
+    Attacks: viruses, unauthorized access, human Error like modifying or deleting files; entering invalid data.<br>
+    Control include: strict access control, input/function checks.</p>
+    <h1><a id="What_is_Availability_in_the_CIA_35"></a>What is Availability in the CIA?</h1>
+    <p>Availability is making information accessible to authorized user timely and without interference or obstruction.<br>
+    Threats: include device failure, and environmental issues (heat, static, flooding, power loss, and so on); including DoS attacks.<br>
+    Countermeasures: monitoring performance and network traffic(SNMP), using firewalls and routers to prevent DoS attacks, Redundancy.</p>
+    <h1><a id="What_is_AAA_of_CIA_40"></a>What is AAA of CIA?</h1>
+    <p>Authentication and Identification Authorization Accountability Auditing(Related Concept to Accountability).</p>
+    <h1><a id="What_is_Authentication_and_Identification_in_the_AAA_of_CIA_43"></a>What is Authentication and Identification in the AAA of CIA?</h1>
+    <p>Authentication and Identification</p>
+    <ul>
+    <li>Identity is claim about who the user is.</li>
+    <li>Providing an identity username; swiping a smart card; or positioning your face, hand, or finger for a camera or scanning</li>
+    <li>Authentication is verifying whether claim identity is valid or not. Sometime requires additional information(password,pins) or identification is handled by other means, such as physical location</li>
+    <li>a single two-step process. Providing an identity is the first step, and providing the authentication factors is the second step</li>
+    </ul>
+    <h1><a id="What_is_Authorization_in_AAA_of_CIA_50"></a>What is Authorization in AAA of CIA?</h1>
+    <p>Authorization</p>
+    <ul>
+    <li>Actions that authorized personnel are allowed to perform and object that user can access once the user has been identified and authenticated.</li>
+    <li>the system evaluates an access control matrix that compares the subject, the object, and the intended activity</li>
+    <li>Privilege Escalation Attack. (Dual segregation of duties)</li>
+    </ul>
+    <h1><a id="What_is_Accountability_in_AAA_of_CIA_56"></a>What is Accountability in AAA of CIA?</h1>
+    <p>Accountability</p>
+    <ul>
+    <li>Hold user accountable for their action.</li>
+    <li>Depends upon strong authentication that provides assurance that every activity undertaken can be attributed to a named person or automated process. E.g: Password Sharing. Legally vulnerable.</li>
+    <li>Passwords Vs. Multifactor Authentication Auditing(Related Concept to Accountability).</li>
+    <li>Auditing Vs Monitoring.</li>
+    <li>actions are tracked and recorded for the purpose of holding the subject accountable for their actions written to log which provides audit trail(history of the event).</li>
+    <li>Auditing is needed to detect malicious actions and system failures and to reconstruct events, provide evidence for the prosecution, and produce problem reports and analysis.</li>
+    </ul>
+    <h1><a id="What_is_NSTISSC_Security_Model_65"></a>What is NSTISSC Security Model?</h1>
+    <p>National Security Telecommunications &amp; Information systems security committee.</p>
+    <h1><a id="What_is_the_six_Ps_68"></a>What is the six Ps?</h1>
+    <p>The extended characteristics/component of information security are known as the six Ps:<br>
+    - Planning<br>
+    - Policy<br>
+    - Programs<br>
+    - Protection<br>
+    - People<br>
+    - Project Management</p>
+    <h1><a id="What_is_Policy_77"></a>What is Policy?</h1>
+    <p>The set of organizational guidelines that dictate certain action within the organization. In InfoSec, there are three general categories of policy:<br>
+    - General program policy (Enterprise Information Security Policy(EISP)){overall security, Roles and responsibility}<br>
+    - An Issue-Specific Security Policy (ISSP){technology=email, internet}<br>
+    - System-Specific Policies (SSP) {standards or procedures/ checklist}</p>
+    <h1><a id="What_is_Program_83"></a>What is Program?</h1>
+    <p>Policy is broken down into the program for implementation. Programs inside Enterprise Information Security Policy(EISP) may be Employee Security Awareness Program, implementation of the firewall.</p>
+    <h1><a id="What_is_Protection_86"></a>What is Protection?</h1>
+    <ul>
+    <li>Risk management activities, including risk assessment and control, as well as protection mechanisms, technologies, and tools.</li>
+    <li>Finding Weakness and Strengthening.</li>
+    </ul>
+    <h1><a id="What_is_People_in_six_Ps_90"></a>What is People in six Ps?</h1>
+    <ul>
+    <li>Managers need to perform a leadership role</li>
+    <li>Mintzberg role of managers:
+    <ul>
+    <li>Informational Role( Provide and Receive communication)</li>
+    <li>Interpersonal Role (Leadership, networking)</li>
+    <li>Decision role (problem-solving, change management, allocate resources, negotiation)</li>
+    </ul>
+    </li>
+    </ul>
+    <h1><a id="What_is_Project_Management_in_six_Ps_97"></a>What is Project Management in six Ps?</h1>
+    <p>Project is the task of temporary nature, start and finish, goal. POLC</p>
+    <h1><a id="What_is_Risk_Management_100"></a>What is Risk Management?</h1>
+    <ol>
+    <li>Risk identification( Identify the threat and calculate its risk)</li>
+    <li>Risk Control (Deciding on what safeguards to be placed)</li>
+    </ol>
+    <h1><a id="What_is_the_Risk_Management_Process_104"></a>What is the Risk Management Process?</h1>
+    <p>1st Stage: Risk Management Strategy<br>
+    2nd Stage: Risk Management program<br>
+    3rd Stage: Risk Management Team<br>
+    4th Stage: Risk Identification</p>
+    <h1><a id="What_is_the_Risk_Management_Strategy_in_the_Risk_Management_Process_110"></a>What is the Risk Management Strategy in the Risk Management Process?</h1>
+    <p>1st Stage: Risk Management Strategy</p>
+    <ul>
+    <li>Incorporate all risk management process, activities, methodologies, and policies to support the objective of the organization i.e security needs.</li>
+    <li>The basis for the risk management program</li>
+    <li>Determined by Internal and External Factors</li>
+    <li>Developed by Board of director or Management</li>
+    <li>Constantly updated because of internal and external factors</li>
+    </ul>
+    <h1><a id="What_is_the_Risk_Management_program_in_the_Risk_Management_Process_118"></a>What is the Risk Management program in the Risk Management Process?</h1>
+    <p>2nd Stage: Risk Management program</p>
+    <ul>
+    <li>Carried out to achieve risk management strategy.</li>
+    <li>Risk Management Program will include;
+    <ol>
+    <li>Context and Purpose of the program</li>
+    <li>Risk Management Team 3.Asset Identification, classification and 4.Methodology to be used</li>
+    </ol>
+    </li>
+    </ul>
+    <h1><a id="What_is_the_Risk_Management_Team_in_the_Risk_Management_Process_125"></a>What is the Risk Management Team in the Risk Management Process?</h1>
+    <p>3rd Stage: Risk Management Team</p>
+    <ul>
+    <li>Define the authority and responsibility of different communities of interest</li>
+    <li>Providing adequate resources to carry out the program</li>
+    <li>Responsibilities of these communities are:
+    <ol>
+    <li>Evaluating Risk</li>
+    <li>Determining control options</li>
+    <li>Acquiring and installing controls</li>
+    <li>Ensuring controls remain effective</li>
+    </ol>
+    </li>
+    </ul>
+    <h1><a id="What_is_Risk_Identification_in_the_Risk_Management_Process_135"></a>What is Risk Identification in the Risk Management Process?</h1>
+    <p>4th Stage: Risk Identification<br>
+    Asset Identification Types of assets:</p>
+    <ol>
+    <li>People (different employees, contractors, vendors)</li>
+    <li>Procedures (Standard and Sensitive)</li>
+    <li>Data (transmission, processing, and storage)</li>
+    <li>Software (applications, operating system, security components)</li>
+    <li>Hardware</li>
+    <li>Network (Network devices, more attacked)</li>
+    </ol>
+    <h1><a id="What_is_Asset_Classification_145"></a>What is Asset Classification?</h1>
+    <p>Classify the asset as per priority (Critical or non-critical) How to assign value to the asset</p>
+    <ol>
+    <li>Which information asset is the most critical to the success of the organization?</li>
+    <li>Which information asset generates the most revenue?</li>
+    <li>Which information asset generates the highest profitability?</li>
+    <li>Which information asset is the most expensive to replace?</li>
+    <li>Which information asset is the most expensive to protect?</li>
+    <li>Which information asset’s loss or compromise would be the most embarrassing or cause the greatest liability? (Cambridge Analytics Scandals)</li>
+    </ol>
+    <h1><a id="What_is_Threat_identification_and_assessment_154"></a>What is Threat identification and assessment?</h1>
+    <p>process of identifying the threat that has the potential to endanger the organization. Criteria for threat assessment(impact)</p>
+    <ol>
+    <li>Which threat represents the most danger to the organization. The danger depends upon
+    <ul>
+    <li>Probability of threat attacking organization</li>
+    <li>The frequency with which attack can occur</li>
+    <li>Amount of damage that it could create</li>
+    </ul>
+    </li>
+    <li>How much cost to recover from damages?</li>
+    <li>Which of threats require the greatest expenditure to prevent?</li>
+    </ol>
+    <h1><a id="What_is_Vulnerability_163"></a>What is Vulnerability?</h1>
+    <p>Vulnerability is a flaw, loophole, error in the IT infrastructure so when a vulnerability is exploited, it will cause loss/ damage to the asset.</p>
+    <h1><a id="What_is_the_main_purpose_of_CBA_Cost_Benefit_AnalysisEconomic_Feasibility_Study_166"></a>What is the main purpose of CBA (Cost Benefit Analysis/Economic Feasibility Study)?</h1>
+    <p>CBA main purpose is to select suitable safeguard based on the cost and benefit. the cost of control or safeguard include:</p>
+    <ul>
+    <li>Cost of development or acquisition of hardware, software, and services</li>
+    <li>Training Fees</li>
+    <li>Cost of implementation</li>
+    <li>Service costs (e.g. Hiring experts)</li>
+    <li>Cost of maintenance (AMC or Annual Subscription) Benefit<br>
+    Value to the organization because of loss prevented by using specific controls. Loss is equal to asset value is at risk. Benefit calculation begins with Asset Valuation and Impact</li>
+    </ul>
+    <h1><a id="What_is_Asset_Valuation_175"></a>What is Asset Valuation?</h1>
+    <p>process of assigning financial value or worth to each information asset. This can include actual cost or non-monetary cost so valuation can be difficult and asset valuation differs from one organization to other will based on following factors like:</p>
+    <ul>
+    <li>cost to create or acquire, design, installation incl. maintenance</li>
+    <li>cost to replace i.e. right now</li>
+    <li>estimation or real costs protection against loss and litigation(fines and penalties) ✓ Value to owners users(critical success, profitability) ✓ worth to the competition (competitive advantage)</li>
+    </ul>
+    <h1><a id="How_to_do_Impact_Assessment_181"></a>How to do Impact Assessment?</h1>
+    <p>After assets valuation, the next step is to identify potential loss in asset occur from the Risk In order to estimate of potential loss per risk. The questions that must be asked here include:</p>
+    <ol>
+    <li>What financial impact would occur due to damage?</li>
+    <li>What would it cost to recover from the attack, in addition to the financial impact of damage? (The goal here is to calculate Single Loss Expectancy for each risk. )</li>
+    </ol>
+    <h1><a id="How_to_calculate_Single_Loss_Expectancy_S_L_E_186"></a>How to calculate Single Loss Expectancy (S L E)?</h1>
+    <p>It is the estimation of loss occurred in a single asset because of a single risk.<br>
+    S L E = Asset Value (A V) x Exposure Factor (E F)<br>
+    Exposure Facture = % of potential loss to the organization caused by a specific threat. The exposure factor for a small asset will be less while for great value asset it will be more.</p>
+    <h1><a id="How_to_calculate_Annual_Loss_ExpectancyA_L_E_191"></a>How to calculate Annual Loss Expectancy(A L E)?</h1>
+    <p>A L E is the estimated yearly cost of loss of risk.<br>
+    A L E = S L E (Single Loss Expectancy) X A R O (Annual Rate of Occurrence)<br>
+    ARO is the expected frequency with which a specific threat or risk will occur (that is, become realized) within a single year. Higher the frequency of risk of the threat, Higher will be ARO.</p>
+    <h1><a id="How_to_calculate_the_Cost_Benefit_Analysis_C_B_A_196"></a>How to calculate the Cost Benefit Analysis (C B A)?</h1>
+    <p>Estimates, whether is a cost associated with control, is justifiable or not. It is calculated before control or safeguard is implemented, to determine if the control is worth implementing, and calculated after controls have been implemented and functioning for a time.<br>
+    C B A = A L E (prior) - A L E (post) - ACS<br>
+    ALE (prior to control) is the ALE of the risk before the implementation of the control. A L E (post control) is the A L E examined after the control has been in place for a period of time. A C S is the Annual Cost of the Safeguard</p>
+    <h1><a id="What_are_the_alternatives_to_CBA_AnalysisQualitative_Analysis_201"></a>What are the alternatives to CBA Analysis(Qualitative Analysis)?</h1>
+    <ul>
+    <li>Benchmarking</li>
+    <li>Due care and due diligence</li>
+    <li>Best business practices</li>
+    <li>Gold standard</li>
+    <li>Government recommendations</li>
+    <li>Baseline</li>
+    </ul>
+    <h1><a id="How_is_Benchmarking_an_alternative_to_CBA_Analysis_209"></a>How is Benchmarking an alternative to CBA Analysis?</h1>
+    <p>comparing an organization’s performance against peers and competitors in an effort to learn the best ways of conducting business or performance gap.</p>
+    <ul>
+    <li>How to perform benchmarking:
+    <ul>
+    <li>Metric Based Measures (comparison is done based on the number to measure performance like no of successful attacks, no security persons)</li>
+    <li>Process Based Measures ( process to attain goals)</li>
+    </ul>
+    </li>
+    <li>Two categories of benchmarks are used:
+    <ul>
+    <li>Standards of due care and due diligence</li>
+    <li>Best practices Problems with Benchmarking;
+    <ul>
+    <li>Lack of cooperation between organizations.</li>
+    <li>No two organizations are identical.</li>
+    <li>Limitation of resources</li>
+    <li>Simply knowing what was going on a few years ago doesn’t necessarily indicate what to do next.(changes in external and internal environment)</li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    <h1><a id="How_Due_care_and_Due_diligence_is_an_alternative_to_Alternatives_to_CBA_AnalysisQualitative_Analysis_222"></a>How Due care and Due diligence is an alternative to Alternatives to CBA Analysis(Qualitative Analysis)?</h1>
+    <ol>
+    <li>Standard of Due Care
+    <ul>
+    <li>When an organization must meet certain minimum levels of security in order to comply with legal requirements. ( For eg: protection of personal data)</li>
+    <li>CBA is not applicable for the safeguard imposed by legislation</li>
+    </ul>
+    </li>
+    <li>Due Diligence
+    <ul>
+    <li>When organization have achieved a standard of due care(applied controls at or above prescribed levels)</li>
+    <li>monitoring that the implemented standards continue to provide the required level of protection. Legal liability if failure to maintain both</li>
+    </ul>
+    </li>
+    </ol>
+    <h1><a id="How_Best_Practices_is_an_alternative_to_CBA_230"></a>How Best Practices is an alternative to CBA?</h1>
+    <ul>
+    <li>Best Security efforts in the overall industry.</li>
+    <li>Benchmarking of best practices via metric based and process based.</li>
+    <li>Should be economic feasible</li>
+    </ul>
+    <h1><a id="How_Gold_Standard_is_an_alternative_to_CBA_235"></a>How Gold Standard is an alternative to CBA?</h1>
+    <ul>
+    <li>Recognition that an organization has achieved “best of best” performance in a certain area.</li>
+    <li>Gold Standard is usually prescribed by the internal standard-setting body. For eg., ISO 27002 as the ‘Gold Standard’ in information security. (114 controls to be fulfilled to become ISO compliant)</li>
+    </ul>
+    <h1><a id="How_Government_Recommendations_is_an_alternative_to_CBA_239"></a>How Government Recommendations is an alternative to CBA?</h1>
+    <ul>
+    <li>Some industries regulated by the government. (Licensing)</li>
+    <li>Specify requirements for the industries.</li>
+    </ul>
+    <h1><a id="How_Baselining_is_an_alternative_to_CBA_243"></a>How Baselining is an alternative to CBA?</h1>
+    <ul>
+    <li>Process of benchmarking</li>
+    <li>Establish standard based on benchmarking/best practices against which actual performance is measured. E.g: No of attacks</li>
+    </ul>
+    <h1><a id="What_are_the_Risk_Control_Strategies_247"></a>What are the Risk Control Strategies?</h1>
+    <ul>
+    <li>Avoidance</li>
+    <li>Transference</li>
+    <li>Mitigation</li>
+    <li>Acceptance</li>
+    </ul>
+    <h1><a id="What_is_Avoidance_in_Risk_Control_Strategies_253"></a>What is Avoidance in Risk Control Strategies?</h1>
+    <ul>
+    <li>Avoid doing the activity that has extreme risk.</li>
+    <li>Process of selecting alternate options or activities that have less associated risk (http Vs https)</li>
+    </ul>
+    <h1><a id="What_is_Transference_in_Risk_Control_Strategies_257"></a>What is Transference in Risk Control Strategies?</h1>
+    <p>Transfer risk of loss to another party or organization. For example Insurance.</p>
+    <h1><a id="What_is_Mitigation_in_Risk_Control_Strategies_260"></a>What is Mitigation in Risk Control Strategies?</h1>
+    <p>Reduces the impact of loss through planning and preparation. Deals with early detection and response accomplished by means of countering threats, removing vulnerabilities from assets, limiting access to assets, and adding protective safeguards. There are three common methods used to mitigate:</p>
+    <ul>
+    <li>Application of policy</li>
+    <li>Education and training</li>
+    <li>Application of technology</li>
+    </ul>
+    <h1><a id="What_is_Acceptance_in_Risk_Control_Strategies_266"></a>What is Acceptance in Risk Control Strategies?</h1>
+    <p>accepting the risk without control or mitigation when countermeasure costs would outweigh the possible cost of loss due to a risk and risk is low.</p>
+    <h1><a id="What_is_Risk_Appetite_269"></a>What is Risk Appetite?</h1>
+    <ul>
+    <li>quantity and nature of risk that organizations are willing to accept for which no controls will be applied.</li>
+    <li>Capacity is based on various factors like the type of business, the criticality of information assets, attitude towards risk.</li>
+    <li>balances the cost of control and risk of loss.(Higher chance of loss-Low risk appetite and higher controls).</li>
+    </ul>
+    <h1><a id="What_is_Residual_Risk_274"></a>What is Residual Risk?</h1>
+    <p>Risk remains after applying Counter Measures(E.g Accounting System). The goal of information security is not to bring residual risk to zero, but to bring it in line with an organization’s risk appetite. Residual risk&gt;Risk appetite(more controls to be applied) Residual risk&lt; Risk appetite(excessive control may have applied)</p>
+    <h1><a id="What_are_the_basic_rules_must_be_followed_when_shaping_a_policy_277"></a>What are the basic rules must be followed when shaping a policy?</h1>
+    <ul>
+    <li>Never conflict with the law.</li>
+    <li>Stand up in court.</li>
+    <li>Properly supported and administered by top mgmt.</li>
+    <li>Contribute to the success of the organization.</li>
+    <li>Involve end users of information systems. (practical)</li>
+    </ul>
+    <h1><a id="How_to_create_a_good_security_policy_Bulls_Eye_Model_284"></a>How to create a good security policy (Bull’s Eye Model)?</h1>
+    <p>Layers of Bull’s Eye</p>
+    <ul>
+    <li>Policies: the first layer of defense</li>
+    <li>Networks: threats first meet the organization’s network.</li>
+    <li>Systems: computers and manufacturing systems</li>
+    <li>Applications: all applications systems</li>
+    </ul>
+    <h1><a id="What_are_Policy_Standards_Guidelines_and_Procedures_291"></a>What are Policy, Standards, Guidelines, and Procedures?</h1>
+    <p>Policy is a plan or course of action that influences and determine decisions. Mandatory.<br>
+    Standards is detailed statement of how to use hardware, technology, software, security controls. Mandatory.<br>
+    Guidelines are recommended action and guides on applying specific standard or when there are no standards. Flexible(customizable).<br>
+    Procedures are is the step-by-step guide for accomplishing a task like that describes the exact actions necessary to implement a specific security mechanism, solutions(hardware deployment). Mandatory.</p>
+    <h1><a id="What_are_the_different_types_of_Information_Security_Policy_297"></a>What are the different types of Information Security Policy?</h1>
+    <ul>
+    <li>Enterprise Information Security Policy (EISP)</li>
+    <li>Issue-Specific Security Policies (ISSP)</li>
+    <li>Systems-specific Security Policies (SysSP)</li>
+    </ul>
+    <h1><a id="What_is_Enterprise_Information_Security_Policy_EISP_302"></a>What is Enterprise Information Security Policy (EISP)?</h1>
+    <p>Sets strategic direction, scope, and tone for the organization’s security efforts. Executive Level document by CISO.<br>
+    Guides development, implementation, and management requirements of the information security program</p>
+    <h1><a id="What_is_Enterprise_Information_Security_Policy_EISP_306"></a>What is Enterprise Information Security Policy (EISP)?</h1>
+    <p>EISP Components:</p>
+    <ol>
+    <li>An overview of the corporate philosophy on security</li>
+    <li>Information on the structure of the information security organization and individuals who fulfill the information security role</li>
+    <li>Fully articulated responsibilities for security that are shared by all members of the organization (employees(i.e., badges), contractors, consultants, partners, and visitors(i.e log book))</li>
+    <li>Fully articulated responsibilities for security that are unique to each role within the organization. (HR vs Marketing)</li>
+    </ol>
+    <h1><a id="What_is_IssueSpecific_Security_Policy_ISSP_313"></a>What is Issue-Specific Security Policy (ISSP)?</h1>
+    <p>focuses on the proper use technologies and department/units function like Email, Use of internet, individual department function. Different approach for Issue-Specific Security Policy (ISSP) Components of An ISSP.</p>
+    <ol>
+    <li>Statement of policy
+    <ul>
+    <li>Scope and applicability</li>
+    <li>Definition of technology addressed</li>
+    <li>Responsibilities</li>
+    </ul>
+    </li>
+    <li>Authorized access and usage of equipment who can use the technology governed by the policy and for what purposes. Fair and responsible use.</li>
+    <li>Prohibited usage of equipment
+    <ul>
+    <li>Disruptive use or misuse</li>
+    <li>Criminal use</li>
+    <li>Offensive or harassing materials</li>
+    <li>Copyrighted, licensed, or other intellectual property</li>
+    </ul>
+    </li>
+    <li>Systems management specify users’ and systems administrators’ responsibilities so that all parties know what they are accountable for. (e.gData Owners)</li>
+    <li>Violations of policy
+    <ul>
+    <li>Procedures for reporting violations</li>
+    <li>Penalties for violations</li>
+    </ul>
+    </li>
+    <li>Policy review and modification
+    <ul>
+    <li>Scheduled review of policy procedures for modification</li>
+    </ul>
+    </li>
+    <li>Limitations of liability a.Statements of liability
+    <ul>
+    <li>Other disclaimers as needed</li>
+    </ul>
+    </li>
+    </ol>
+    <h1><a id="What_is_SystemsSpecific_Policy_SysSP_334"></a>What is Systems-Specific Policy (SysSP)?</h1>
+    <p>They often function as standards or procedures to be used when configuring or maintaining systems, hardware, software. Systems-Specific Policy (SysSP) can be separated into:</p>
+    <ol>
+    <li>Management guidance:
+    <ul>
+    <li>Created by management to guide the implementation and configuration of technology.</li>
+    <li>Informs technologists of management’s intent</li>
+    </ul>
+    </li>
+    <li>Technical specifications
+    <ul>
+    <li>System administrator’s directions on implementing managerial policy</li>
+    <li>Each type of equipment has its own Technical Specifications SysSPs</li>
+    <li>There are two general methods of implementing such technical controls:
+    <ul>
+    <li>Access Control Lists</li>
+    <li>Configuration Rules</li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ol>
+    <h1><a id="What_is_Access_Control_Lists_ACL_346"></a>What is Access Control Lists (ACL)?</h1>
+    <p>control access to file storage systems, object , or other network communications devices include the user access lists, matrices, and capability tables that govern the rights and privilege of users In general, ACLs regulate:</p>
+    <ul>
+    <li>Who can use the system?</li>
+    <li>What authorized users can access?</li>
+    <li>When authorized users can access the system?</li>
+    <li>Where authorized users can access the system from?</li>
+    <li>How authorized users can access the system?</li>
+    <li>Restricting what users can access, e.g., printers, files, communications, and applications? E.g.: Firewall(Filter,block, reduce)</li>
+    </ul>
+    <h1><a id="What_is_Configuration_Rules_355"></a>What is Configuration Rules?</h1>
+    <p>Configuration rules are instructional codes that dictate which actions to perform on each set of information they process. Specific configuration scripts telling the systems what actions to perform on each set of information they process. Rule-based policies more specific than ACL while operating system.</p>
+    <h1><a id="What_is_Contingency_Planning_358"></a>What is Contingency Planning?</h1>
+    <ul>
+    <li>Different from Risk Management Framework(Risk Management is Proactive vs Contingency Planning is Reactive)</li>
+    <li>The goal is to restore normal business within a reasonable period of time at minimum cost.</li>
+    <li>The main aim is to make the organization resilient.</li>
+    <li>The Hartford insurance company estimates that, on average, over</li>
+    </ul>
+    <ol start="4">
+    <li>percent of businesses that don’t have a disaster plan go out of business after a major loss like a fire, a break-in, or a storm</li>
+    </ol>
+    <h1><a id="What_are_the_components_of_Contingency_Planning_365"></a>What are the components of Contingency Planning?</h1>
+    <p>Business Impact analysis: Identifies the information systems that are critical for business operations and assess consequences in case of disruption of that system. High Impact System(with high requirement of information security objective) will have huge impact to business Low Impact System(with low requirement of information security objective) will have low impact to the business Its result will help in the development of the following plans:</p>
+    <ul>
+    <li>Incident Response Plan (IRP)</li>
+    <li>Disaster Recovery Plan (DRP)</li>
+    <li>Business Continuity Plan (BCP)</li>
+    </ul>
+    <h1><a id="What_is_Incident_Response_PlanIRP_371"></a>What is Incident Response Plan(IRP)?</h1>
+    <h1><a id="What_is_an_incident_373"></a>What is an incident?</h1>
+    <ul>
+    <li>Directed against information assets.</li>
+    <li>Have a realistic chance of success</li>
+    <li>Threatens the CIA of information resources IRP deals with how to identify, mitigate and recover from those computer incidents</li>
+    </ul>
+    <h1><a id="What_is_Disaster_Recovery_PlanDRP_378"></a>What is Disaster Recovery Plan(DRP)?</h1>
+    <h1><a id="What_is_a_disaster_380"></a>What is a disaster?</h1>
+    <ul>
+    <li>Unable to mitigate the impact of an incident</li>
+    <li>The impact is severe that organization cannot recover quickly It deals with restoring information system operation at a primary site during the emergency</li>
+    </ul>
+    <h1><a id="What_is_the_Business_Continuity_PlanBCP_384"></a>What is the Business Continuity Plan(BCP)?</h1>
+    <ul>
+    <li>Occurs when those operations cannot be quickly restored at the primary site and disruption will have long term impact.</li>
+    <li>Enables to continue business at alternative sites like hot, warm, cold.</li>
+    </ul>
+    <h1><a id="What_are_the_steps_of_Contingency_Planning_388"></a>What are the steps of Contingency Planning?</h1>
+    <ol>
+    <li>Develop the CP policy statement. A formal policy provides the authority and guidance necessary to develop an effective contingency plan. Contingency Planning Management Team headed by Information Security Contingency Plan Coordinator. Include members from the business community, IT manager, Info security, legal, CIO. Related with other policies(HR, Account, etc)</li>
+    <li>Conduct the BIA. The BIA helps identify and prioritize information systems and components critical to supporting the organization’s mission/business processes and what will be the major consequences in case of disruption</li>
+    <li>Identify Resource Requirement: evaluation of the resources required to resume mission/business processes as quickly as possible. identify internal and external POCs</li>
+    <li>Identify Preventive Controls: identification of effective contingency planning preventive controls and maintaining these controls on an ongoing basis(Like fire suppression system, fire extinguisher, backup)</li>
+    <li>Creating and implementing Contingency Strategy: deals with selecting and implementing the right set of security controls. For e.g.; incident, disaster and business continuity).</li>
+    <li>Plan Testing, Training, and Exercises
+    <ul>
+    <li>Testing: determines the operability of the plan by identifying any deficiencies. Should be as close to the operating environment. (like network down, calling POC)</li>
+    <li>Training: deals with informing personnel of their roles and responsibilities within a particular information system contingency plan and teaching them skills related to those roles and responsibilities for preparing them for participation in exercise, test, and emergency. Done Annually.</li>
+    <li>Exercises: simulation of an emergency designed to validate the successful operation of components of contingency planning. (drill test)</li>
+    </ul>
+    </li>
+    </ol>
+    <h1><a id="What_is_Business_Process_and_Recovery_Criticality_399"></a>What is Business Process and Recovery Criticality?</h1>
+    <p>It is the process of determining the recovering high-impact system that is based on the following criteria:</p>
+    <ol>
+    <li>Maximum Tolerable Downtime (MTD): The total amount of outage or disruption time that the system owner is willing to accept considering all impact.</li>
+    <li>Recovery Time Objective(RTO): The maximum time period within which the business process has to be restored to avoid unacceptable impact. (MTD vs RTO)</li>
+    <li>Recovery Point Objective(RPO): It is measured in time that shows an acceptable amount of loss of data that business/process can tolerate.</li>
+    <li>Work Recovery Time(WRT): It deals with restoring data, testing process and then making everything live for production purpose.</li>
+    </ol>
+    <h1><a id="What_are_the_stages_of_Business_Impact_Analysis_406"></a>What are the stages of Business Impact Analysis?</h1>
+    <ol>
+    <li>Threat attack identification and prioritization: Create Attack profile of various attack which includes, symptoms of an attack, what information systems it will impact.</li>
+    <li>Business Unit Analysis: Identify critical business and its supporting information system</li>
+    <li>Attack Success Scenario: Create a series of scenario, determining the outcome of a successful attack from each threat on critical information system</li>
+    <li>Potential Damage Assessment: Outcome of scenario is ranked:(low, medium, high) Attack scenario end case</li>
+    <li>Subordinate Plan Classification: Decide which plan to execute like IR plan(low), DR plan(medium) and BCP plan(high)</li>
+    </ol>
+    <h1><a id="What_are_the_stages_of_Incident_Response_Planning_413"></a>What are the stages of Incident Response Planning?</h1>
+    <ol>
+    <li>IR planning: For each attack scenario developed in BIA, we develop a series of predefined action scenario in a checklist.</li>
+    <li>Incident Detection: Incident indicators provided by human or automation system</li>
+    <li>Incident Reaction: Stop the incident, mitigate the impact, inform key personnel(alert rooster, alert message), documentation(learning, legal standpoint, run the simulation)</li>
+    <li>Incident Recovery: Damage assessment and recovery method. Includes the following activities:
+    <ul>
+    <li>Identifying Vulnerabilities</li>
+    <li>Addressing Safeguards</li>
+    <li>Restoring data from backups</li>
+    <li>Monitoring the system.</li>
+    <li>Inform communities of interest</li>
+    </ul>
+    </li>
+    </ol>
+    <h1><a id="What_are_the_stages_of_Disaster_Recovery_Plan_424"></a>What are the stages of Disaster Recovery Plan</h1>
+    <ol>
+    <li>Disaster Recovery Plan: Includes type of disaster and specific recovery procedures during and after each type of disaster. Roles and responsibilities</li>
+    <li>Crisis Management: Creating Crisis Management team and creating a command center. Two Functions:
+    <ul>
+    <li>Accounting for everyone/supporting personnel.</li>
+    <li>Activating alert rooster.</li>
+    <li>Keeping public/management inform</li>
+    </ul>
+    </li>
+    <li>Recovery Scenarios: Restore the system to full operation. If the primary site destroyed BCP is initiated.</li>
+    </ol>
+    <h1><a id="What_are_the_stages_of_the_Business_Continuity_Plan_432"></a>What are the stages of the Business Continuity Plan?</h1>
+    <p>BCP used in multinational companies that small companies</p>
+    <ol>
+    <li>Plan for continuity of operation Deals with finding temporary facilities equipped with the necessary resources to run critical function to continue the business.</li>
+    <li>Continuity Strategies Different Options based on cost:
+    <ul>
+    <li>Hot Sites: Duplicates computing resources, peripherals, phone system application. Most Expensive.</li>
+    <li>Warm Sites: Contains equipment like a store. Restore backup. Takes time to be fully operational.</li>
+    <li>Cold Sites: the only empty room with standard heating, air-conditioning. Least expensive.</li>
+    </ul>
+    </li>
+    <li>Continuity management Provision of above sites via mutual agreement, paying for a vendor.</li>
+    </ol>
+    <h1><a id="What_is_Law_Enforcement_Involvement_in_Contingency_Planning_441"></a>What is Law Enforcement Involvement in Contingency Planning?</h1>
+    <p>Attacks deal with the violation of law decide what type of law enforcement after taking legal counsel necessary. Advantages:</p>
+    <ol>
+    <li>Better able to process evidence</li>
+    <li>Issues warrant/subpoenas to obtaining witness, suspect statement Disadvantages:
+    <ul>
+    <li>Loss of control</li>
+    <li>Lack of information</li>
+    <li>Loss of equipment</li>
+    </ul>
+    </li>
+    </ol>
+    <h1><a id="What_is_the_Sphere_of_Security_449"></a>What is the Sphere of Security?</h1>
+    <p>Technical Control enables policy enforcement where human behavior is difficult to regulate.</p>
+    <h1><a id="What_is_Access_Control_452"></a>What is Access Control?</h1>
+    <p>Regulates the physical(external) and logical access(built-in the system) of users into trusted areas of the organization like physical devices, system resources. Collection of policies, programs, and technical control. Three models (approach) of Access Control:</p>
+    <ol>
+    <li>Mandatory Access Control
+    <ul>
+    <li>to protected highly classified data.</li>
+    <li>used by government oriented agencies that maintain top-secret information</li>
+    <li>greatly reduces the amount of rights, permissions, and functionality a user has for security purposes. (user can’t install any programs, change file permission)</li>
+    </ul>
+    </li>
+    <li>Discretionary Access Control
+    <ul>
+    <li>enables the owner of the resource to specify which subjects can access specific resources.</li>
+    </ul>
+    </li>
+    <li>Non-Discretionary (Role Based) Access Control
+    <ul>
+    <li>The access rights are given to the individuals on the basis of function they have to perform. For eg, IT admin role, managerial role.</li>
+    <li>Best in the organization with high employee turnover</li>
+    <li>based upon the necessary operations and tasks a user needs to carry out to fulfill his/her responsibilities in an organization. (least privilege principle)</li>
+    </ul>
+    </li>
+    </ol>
+    <h1><a id="What_are_the_elements_of_Access_Control_465"></a>What are the elements of Access Control?</h1>
+    <ol>
+    <li>Identity</li>
+    <li>Authentication</li>
+    <li>Authorization</li>
+    <li>Accountability</li>
+    <li>Identity: is a claim that is given by User ID in the information system. It must be unique</li>
+    </ol>
+    <h1><a id="What_is_Authentication_472"></a>What is Authentication?</h1>
+    <p>process of validating a user identity There are four types of authentication mechanisms:</p>
+    <ul>
+    <li>Something You Know: a password, passphrase, or some other unique authentication code like PIN.</li>
+    <li>Something You Have: on basis of something that the user possesses. (a card,key, or token)</li>
+    <li>Something You Are: identity based on a unique physical attribute that is evaluated by biometrics like fingerprint, facial recognition</li>
+    <li>Something You Produce: action performed by users, like signature recognition and voice recognition. A strong authentication uses at least two different authentication mechanism types.(two-factor or multifactor authentication)</li>
+    </ul>
+    <h1><a id="How_to_evaluate_Biometrics_479"></a>How to evaluate Biometrics?</h1>
+    <p>Biometric technologies are generally evaluated according to three basic criteria:</p>
+    <ul>
+    <li>The false reject rate (FRR) /False Negative/ Type I Error: the percentage of authorized users who are denied access</li>
+    <li>not a threat to security</li>
+    <li>The false accept rate (FAR)/False Positive/ Type II Error: the percentage of unauthorized users who are allowed access</li>
+    <li>a serious breach of security</li>
+    <li>The crossover error rate (CER): the point at which the number of false rejections equals the false acceptances</li>
+    <li>an optimal outcome</li>
+    </ul>
+    <h1><a id="What_is_Authorization_488"></a>What is Authorization?</h1>
+    <p>Establish whether the user is authorized to access the particular resource and what actions he is permitted to perform on that resource. In general, authorization can be managed by:</p>
+    <ul>
+    <li>Authorization for each authenticated user (complex and resource-intensive).</li>
+    <li>Authorization for members of a group (most commonly used method).</li>
+    <li>Authorization across multiple systems (‘single sign-on’)a central authentication and authorization system verifies entity identity and grants authorization.</li>
+    </ul>
+    <h1><a id="What_is_Accountability_494"></a>What is Accountability?</h1>
+    <p>Ensure users are accountable for their actions, Reviewing logs to reconstruct events i.e., track bad deeds back to individuals, detect intrusions.</p>
+    <h1><a id="What_is_a_Firewall_497"></a>What is a Firewall?</h1>
+    <p>In information security, a firewall is any device that prevents a specific type of information from moving between two networks, often the outside, known as the untrusted network (e.g., the Internet), and the inside, known as the trusted network.<br>
+    The firewall may be a separate computer system, a service running on an existing router or server, or a separate network containing a number of supporting devices(DMZ).</p>
+    <h1><a id="What_are_the_different_Firewall_Architectures_501"></a>What are the different Firewall Architectures?</h1>
+    <ol>
+    <li>Packet filtering Router First generation firewall. Packet filtering is a firewall technology that makes access decisions based upon header information of the packet. Header values include source and destination IP address, port numbers, protocol types, on the basis of which inbound and outbound traffic is controlled by the firewall. The main disadvantage is that they only inspect the header of the packet but not content, as well as header, can be spoofed.</li>
+    <li>Screened-host firewalls Screened-host firewall systems combine the packet filtering router with a separate, application proxy server known as a bastion host.
+    <ul>
+    <li>The router is used to screen packets to minimize the network traffic and load on the internal proxy.</li>
+    <li>The application proxy examines an application layer protocol, such as HTTP, Mail and performs the proxy services.</li>
+    <li>This separate and single host, which is often referred to as a bastion host, represents a rich target for external attacks and should be very thoroughly secured.</li>
+    </ul>
+    </li>
+    <li>Dual-homed host firewalls A dual-homed host architecture is built around the dual-homed host computer with two network interface: one that is connected to the external network, and one that is connected to the internal network. Use a dual-homed host as a firewall, you disable this routing function. A user wishing to access the trusted network from the Internet would log into the dual-homed host first, and then access the trusted network from there.</li>
+    <li>Screened-subnet firewalls
+    <ul>
+    <li>The screened-subnet firewall consists of one or more internal bastion hosts located behind a packet filtering router, with each host protecting the trusted network. This raises the level of difficulty to penetrate the defense.</li>
+    <li>One of the general models (in Figure 9-8) shows connections are routed as follows:
+    <ul>
+    <li>Connections from the outside or untrusted network are routed through an external filtering router</li>
+    <li>Connections from the outside or untrusted network are routed into—and then out of—a routing firewall to the separate network segment known as the DMZ</li>
+    <li>Connections into the trusted internal network are allowed only from the DMZ bastion host servers</li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ol>
+    <h1><a id="What_are_Intrusion_Detection_Systems_IDSs_515"></a>What are Intrusion Detection Systems (IDSs)?</h1>
+    <p>Tool for detecting unauthorized use of, or attack upon, a computer, network, or telecommunications infrastructure to mitigate damage by sending an alert on a network manager’s screen, or e-mail or even reconfiguring a firewall’s ACL setting. IDS have 3 components:</p>
+    <ul>
+    <li>Sensors: collect network traffic and user activity data.</li>
+    <li>Analyzer: determines suspicious activity based on rules.</li>
+    <li>administrator’s interface: the terminal where sends an alert Like firewall systems, IDSs require complex configurations to provide the level of detection and response desired.</li>
+    </ul>
+    <h1><a id="What_is_a_HostBased_IDS_521"></a>What is a Host-Based IDS?</h1>
+    <p>installed on individual workstations and/or servers to watch for inappropriate or abnormal activity usually used to provide alerts if users have delete system files, reconfigure important settings, or put the system at risk in any other way(e.g system folder). Reactive HIDS products are installed only on critical servers, not on every system on the network, because of the resource overhead and the administration hassle that such an installation would cause.</p>
+    <h1><a id="What_is_a_NetworkBased_IDS_524"></a>What is a Network-Based IDS?</h1>
+    <p>monitor network traffic when unusual activity occurs and then notify the appropriate administrator. (Packet sniffer) network IDPSs require a much more complex configuration and maintenance program than do host-based IDPSs. (E.g Network intefaces) proactive nature(because generating an alert in real time).</p>
+    <h1><a id="What_is_Knowledge_or_Signaturebased_Intrusion_Detection_527"></a>What is Knowledge or Signature-based Intrusion Detection?</h1>
+    <p>IDS vendor accumulate knowledge about different attacks and how they are carried out and develop a model known as Signatures. Each identified attack has a signature, which is used to detect an attack in progress or determine if one has occurred within the network. (land attack) Their effectiveness depends IDS is weak against new types of attacks as signatures are based on previously identified attack.</p>
+    <h1><a id="What_is_Statistical_AnomalyBased_IDS_530"></a>What is Statistical Anomaly-Based IDS?</h1>
+    <p>Knows as Behavioral-based IDS where it first collects data from network traffic and establishes a baseline. It then periodically samples network activity, based on statistical methods, and compares the samples to the baseline.<br>
+    When the activity falls outside the baseline parameters (known as the clipping level), the IDS notifies the administrator. advantage of this approach is that the system is able to detect new types of attacks whose signature or fix has not been developed yet because it looks for the abnormal activity of any type. Disadvantage it is difficult to define what is normal when the network is constantly changing, it will create a lot of false positives. (attacker integrate his activities).</p>
+    <h1><a id="What_is_Remote_Authentication_DialIn_User_Service_RADIUS__Terminal_Access_Controller_Access_Control_System_TACACS_534"></a>What is Remote Authentication Dial-In User Service (RADIUS) &amp; Terminal Access Controller Access Control System (TACACS)?</h1>
+    <p>RADIUS and TACACS are systems that authenticate the credentials of users who are trying to access an organization’s network via a dial-up connection. RADIUS has a central RADIUS server that centralizes the management of user authentication.<br>
+    A Remote Authentication Dial-In User Service (RADIUS) system centralizes the management of user authentication by placing the responsibility for authenticating each user in the central RADIUS server.<br>
+    When a Remote Access Server (RAS) receives requests for a network connection from a dial-up client, it passes the request along with the user’s credentials to the RADIUS server; RADIUS then validates the credentials.</p>
+    <h1><a id="What_is_Law_and_Ethics_in_Information_Security_539"></a>What is Law and Ethics in Information Security?</h1>
+    <ul>
+    <li>Laws: rules enforced by government to maintain certain behavior in society. (mandatory).</li>
+    <li>Ethics: define socially acceptable behavior based on cultural mores.</li>
+    <li>Cultural mores: relatively fixed moral attitudes or beliefs of a particular group.</li>
+    <li>Difference: laws carry sanctions (enforcement)of a governing authority but ethics does not. Law is enforced and ethics come from within Belief vs Idea. (lack of cybersecurity awareness).</li>
+    </ul>
+    <h1><a id="What_are_the_types_of_Law_545"></a>What are the types of Law?</h1>
+    <ul>
+    <li>Civil law: represents a wide variety of laws that govern a nation/state.</li>
+    <li>Criminal law: addresses violations harmful to the society that is punishable by the law.</li>
+    <li>Tort law: a subset of civil law that allows individuals to seek recourse against others in the event of personal, physical, or financial injury.</li>
+    <li>Private law regulates the relationships among individuals and organizations, and encompasses family law, commercial law, and labor law.</li>
+    <li>Public law law affects the general public. All the citizens have to follow. For e.g., criminal, administrative, and constitutional law.</li>
+    </ul>
+    <h1><a id="What_is_Policy_as_Law_552"></a>What is Policy as Law?</h1>
+    <p>Policies serve as organizational laws. Unlike law, however, ignorance is an acceptable defense. Therefore to be enforceable as law, policies must be:</p>
+    <ul>
+    <li>Distributed to all individuals who are expected to comply with them.</li>
+    <li>Readily available for employee reference.</li>
+    <li>Easily understood, with multilingual translations and translations for visually impaired or low-literacy employees.</li>
+    <li>Acknowledged by the employee, usually by means of a signed consent form.</li>
+    <li>Uniformly enforced for all employees.</li>
+    </ul>
+    <h1><a id="What_is_Ethics_and_Information_Security_560"></a>What is Ethics and Information Security?</h1>
+    <p>Cultural differences create difficulty in determining what is and is not ethical.</p>
+    <ul>
+    <li>Difficulties arise when one nationality’s ethical behavior conflicts with ethics of another national group.</li>
+    <li>Overriding factor in leveling the ethical perceptions within a small population is education.</li>
+    <li>Employees must be trained in expected behaviors of an ethical employee, especially in areas of information security.</li>
+    </ul>
+    <h1><a id="What_is_Deterrence_to_Unethical_and_Illegal_Behavior_566"></a>What is Deterrence to Unethical and Illegal Behavior?</h1>
+    <p>Three causes of unethical and illegal behavior(Ignorance, accident, intent) Deterrence is the best method for preventing an illegal or unethical activity.<br>
+    Examples of deterrents include laws, policies, and technical controls. However, organization laws/policies and their associated penalties only deter if three conditions are present:</p>
+    <ul>
+    <li>Fear of penalty</li>
+    <li>Probability of being caught</li>
+    <li>Probability of penalty being administered</li>
+    </ul>
+    <h1><a id="What_is_Organizational_Liability_573"></a>What is Organizational Liability?</h1>
+    <p>If an employee, acting with or without the authorization, performs an illegal or unethical act, causing some degree of harm, the organization can be held financially liable for that action.<br>
+    An organization increases its liability (legal obligation) if it refuses to take measures known as “due care” that is to make sure that every employee knows what is acceptable and what is not, and the consequences of illegal or unethical actions(policy, training)<br>
+    “Due diligence” requires that an organization make a valid and the ongoing effort to maintain due care.&quot;</p>
+    <h1><a id="What_is_Audit_Risk_and_Materiality_578"></a>What is Audit Risk and Materiality?</h1>
+    <ul>
+    <li>Materiality: Significance amount/ severe impact on CIA. Risk-Based Audit focus on material threats. Types of Audit Risk Inherent Risk: Risk that occurs because of the nature of business. (Banks, Heath Sector).</li>
+    <li>Control Risk: the Material threat that cannot be prevented or detected on a timely basis by controls. (manual log review vs SIEM).</li>
+    <li>Detection Risk: Material error/lapses in IT security not detected by auditor. Inherent Risk and Control Risk Vs Detection Risk.</li>
+    </ul>
+    <h1><a id="What_are_Evidence_and_Conclusion_583"></a>What are Evidence and Conclusion?</h1>
+    <p>Two types of audit conclusion/opinion. (Qualified Vs Unqualified). Audit conclusion/opinion should be supported by Evidence Evidence is collected from:</p>
+    <ol>
+    <li>IS audit observations.</li>
+    <li>Interview or correspondence with different parties.</li>
+    <li>Audit Test procedures( Pen testing) Evidence should be:
+    <ul>
+    <li>Valid and relevant.</li>
+    <li>Complete.</li>
+    </ul>
+    </li>
+    </ol>
+    <h1><a id="What_is_Internal_Controls_591"></a>What is Internal Controls?</h1>
+    <p>Risk Management tool applied within the organization Composed of policies, procedures, practices, technical controls, and organizational structures. Automatic and Manual Two key purposes:</p>
+    <ol>
+    <li>To achieve business objectives</li>
+    <li>To avoid bad thing happening(minimize the risk of error/omission/fraud) Types of Internal Controls;
+    <ul>
+    <li>Preventive: Detect problems before they arise (Example: Encryption, access control).</li>
+    <li>Detective: Detect and report errors (Example: Reviewing logs).</li>
+    <li>Corrective: Identify error, Minimize impact (Example: Contingency planning, backup Res.).</li>
+    </ul>
+    </li>
+    </ol>
+    <h1><a id="What_is_IT_Audit_Process_599"></a>What is IT Audit Process?</h1>
+    <ol>
+    <li>Planning:
+    <ul>
+    <li>determine the objectives and scope of the audit.</li>
+    <li>Risk Assessment:
+    <ul>
+    <li>Evaluate risk and internal controls.</li>
+    <li>Compliance and Substantive testing.</li>
+    <li>Developing checklists.</li>
+    </ul>
+    </li>
+    <li>Scheduling( avoiding personnel absences and times of high activity).</li>
+    <li>Kick off meeting(Interviews with the clients, point of contact, reporting mechanism).</li>
+    </ul>
+    </li>
+    <li>Fieldwork and Documentation:
+    <ul>
+    <li>Apply checklist i.e. carry out audit procedures.</li>
+    <li>Determine risk and lapses in internal controls=Findings.</li>
+    <li>Documentation(Working papers):
+    <ul>
+    <li>arrive valid conclusion?</li>
+    <li>defense if the conclusion is challenged.</li>
+    <li>learn from the experience.</li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li>Issue Discovery and Validation:
+    <ul>
+    <li>Report findings like potential risky issues, lacking mitigate controls.</li>
+    <li>Timely reporting(correction timely and avoid confusion).</li>
+    </ul>
+    </li>
+    <li>Solution Development Three ways to provide a solution:
+    <ul>
+    <li>Recommendation Approach (Auditor Recommends but may not be effective).</li>
+    <li>Management-Response Approach (Auditor report issue with or without recommendation asking for management response)<br>
+    ution Approach(Client and auditor mutually agree on an action plan).</li>
+    </ul>
+    </li>
+    <li>Report Draft and issuance:
+    <ul>
+    <li>Audit Report two purposes( Auditor’s Record, Business Report Card)</li>
+    <li>Elements of Audit Report
+    <ul>
+    <li>Statement of Audit Scope(what areas were covered in audit).</li>
+    <li>Executive Summary( Brief summary of audit report highlighting major issues and action plan).</li>
+    <li>List of issues and action plans(layman terms).</li>
+    <li>conclusion(satisfactory, unsatisfactory or needs improvement).</li>
+    </ul>
+    </li>
+    <li>distribute reports (for response).</li>
+    </ul>
+    </li>
+    <li>Issue Tracking:
+    <ul>
+    <li>Audit Closure?</li>
+    <li>track and follow up on issues until they are resolved.</li>
+    <li>Escalation (Final resort).</li>
+    <li>Validation .e.g. BCP plan.</li>
+    </ul>
+    </li>
+    </ol>
+    <h1><a id="What_is_Audit_Trail_636"></a>What is Audit Trail?</h1>
+    <p>A chronological record of any event or activities (log) Three types of logs:<br>
+    1.System Logs: record events executed on an operating system, including miscellaneous events and those generated during system startup like hardware and controller failures.</p>
+    <ol start="2">
+    <li>Application Logs: record the events regarding access to the application . For e.g., events include reading, editing, deleting, or printing files.</li>
+    <li>Security logs track security-related events like logon and logoff times and changes to access rights.</li>
+    </ol>
+    <h1><a id="What_is_Project_Management_642"></a>What is Project Management?</h1>
+    <p>Project management is techniques to plan, organize, and monitor the project activities. Hence Project management is a process that is composed of:</p>
+    <ol>
+    <li>Planning: Begins with a goal, sets standard (time, resources), suitable project leader and team.</li>
+    <li>Monitoring and Controlling: Proactive Measure of the performance of the project against the standard.</li>
+    <li>Closing: Project is terminated.</li>
+    </ol>
+    <h1><a id="What_is_Project_Plan_Development_648"></a>What is Project Plan Development?</h1>
+    <p>Three core elements are used in the creation of a project plan: work time, resources, project deliverables Project.</p>
+    <ul>
+    <li>Deliverables: are outcomes that are demonstrable. it’s a product, a process, a policy, or some other outcome. This specifies the roadmap of the project.</li>
+    <li>Resources: includes people, equipment, supplies, materials, software, hardware depending on the project that needs to be quantified. (constraint or budget).</li>
+    <li>Work Time: fixing start and deadline of the project which realistic based on its’ scope.</li>
+    </ul>
+    <h1><a id="What_are_the_Project_Planning_Considerations_654"></a>What are the Project Planning Considerations?</h1>
+    <p>Special considerations include:</p>
+    <ul>
+    <li>Finance (Budget, CBA).</li>
+    <li>Priority (Priority of work package is determined by No of dependencies and Resource(experts) availability).</li>
+    <li>Time And Schedule (Estimating a project schedule(PERT, GANTT chart)).</li>
+    <li>Staff (Need to hire/employ enough qualified, trained, and other personnel).</li>
+    <li>Procurement (purchasing goods or services from vendors, contractors, suppliers. Limited by Budget Constraints).</li>
+    <li>Organizational Feasibility (Plan for change management like new policies, processes, technology and these can create tension and resistance).</li>
+    <li>Training.</li>
+    </ul>
+    <h1><a id="What_is_the_Work_Breakdown_StructureWBS_664"></a>What is the Work Breakdown Structure(WBS)?</h1>
+    <p>It breaks down the project scope into manageable deliverables known as work packages.</p>
+</article>
+    </body></html>
+    
